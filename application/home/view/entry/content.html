@@ -1,0 +1,833 @@
+﻿{extend name='base'/}
+{block name='content'}
+<div class="goodsWarp width1100 fixed" style="margin-top:25px;">
+    <p id="goods_id" style="display:none;">183180</p>
+    <p id="store_id" style="display:none;">1269466</p>
+    <link href="__STATIC__/home/content/css/two_level_page.css" rel="stylesheet" type="text/css"/>
+    <link href="__STATIC__/home/content/css/goods_info.css" rel="stylesheet" type="text/css"/>
+    <link href="__STATIC__/home/content/css/logotip.css" rel="stylesheet" type="text/css"/>
+    <link href="__STATIC__/home/content/css/userinfo.css" rel="stylesheet" type="text/css"/>
+
+    <div class="logoTip1" style="display:none;">
+        <div class="logoTip1-top">
+            <div class="logoTip1-top-close">
+                <a href="javascript:closemet()">close</a>
+            </div>
+            <p class="logoTip1-top-text ms_yahei">发私信</p>
+        </div>
+        <div class="logoTip1-addressee ms_yahei fontSize" id="mesreceiveuser"></div>
+        <dl class="logoTip1-messageBody">
+            <dt class="ms_yahei fontSize">内&nbsp;&nbsp;&nbsp;容：</dt>
+            <dd><textarea class="ms_yahei fontSize" id="mescontent" maxlength="300"
+                          onkeyup="myhome_calc_num1('mescontent','mesem','messubmit')"></textarea></dd>
+            <div class="clear"></div>
+        </dl>
+
+        <div class="logoTip1-sendButton">
+            <a href="javascript:sendmess();" id="messubmit" class="ms_yahei">发送</a>
+            <span class="ms_yahei"><em id="mesem">0</em>/300</span>
+        </div>
+    </div>
+    <div class="storeIndexConL fl">
+
+        <input type="hidden" id="gcate_url" value="index.php?app=store&amp;id=1269466&amp;act=search"/>
+
+        <div class="goodsHotLove">
+            <div class="ws_love_hot_nav ed_clear">
+                <a href="javascript:rankings('1');" class="ms_yahei fontSize love_hot_checked" id="ranking1">最爱排行</a>
+                <a href="javascript:rankings('2');" class="ms_yahei fontSize" id="ranking2">热销排行</a>
+            </div>
+            <ul class="ws_love_hot_list ed_clear">
+                <li>
+                    <dl class="ed_clear">
+                        <dt><a href="/content/4.html" target="_blank"><img
+                                src="{$lovegoodsData[0]['thumb']}" width="69"
+                                height="69"/></a></dt>
+                        <dd>
+                            <a href="/content/4.html" target="_blank" class="ms_yahei">纯手工男士意大利植鞣牛皮...</a>
+                            <br/>
+                            <span class="ms_yahei">￥{$lovegoodsData[3]['price']}</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="ed_clear">
+                        <dt><a href="/content/5.html" target="_blank"><img
+                                src="{$lovegoodsData[1]['thumb']}" width="69"
+                                height="69"/></a></dt>
+                        <dd>
+                            <a href="/content/5.html" target="_blank" class="ms_yahei">（顺丰包邮 新品）骨元 骨廓...</a>
+                            <br/>
+                            <span class="ms_yahei">￥{$lovegoodsData[4]['price']}</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="ed_clear">
+                        <dt><a href="/content/6.html" target="_blank"><img
+                                src="{$lovegoodsData[2]['thumb']}" width="69"
+                                height="69"/></a></dt>
+                        <dd>
+                            <a href="/content/6.html" target="_blank" class="ms_yahei">私人定制招财镯子 泰国老...</a>
+                            <br/>
+                            <span class="ms_yahei">￥{$lovegoodsData[5]['price']}</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="ed_clear">
+                        <dt><a href="/content/7.html" target="_blank"><img
+                                src="{$lovegoodsData[3]['thumb']}" width="69"
+                                height="69"/></a></dt>
+                        <dd>
+                            <a href="/content/7.html" target="_blank" class="ms_yahei">刻字古典黑檀木书签定...</a>
+                            <br/>
+                            <span class="ms_yahei">￥{$lovegoodsData[6]['price']}</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="ed_clear">
+                        <dt><a href="/content/8.html" target="_blank"><img
+                                src="{$lovegoodsData[4]['thumb']}" width="69"
+                                height="69"/></a></dt>
+                        <dd>
+                            <a href="/content/8.html" target="_blank" class="ms_yahei">【忆笑颜】系列项链 紫光...</a>
+                            <br/>
+                            <span class="ms_yahei">￥{$lovegoodsData[7]['price']}</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="ed_clear">
+                        <dt><a href="/content/9.html" target="_blank"><img
+                                src="{$lovegoodsData[5]['thumb']}" width="69"
+                                height="69"/></a></dt>
+                        <dd>
+                            <a href="/content/9.html" target="_blank" class="ms_yahei">原创设计古着范简约个性...</a>
+                            <br/>
+                            <span class="ms_yahei">￥{$lovegoodsData[8]['price']}</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="ed_clear">
+                        <dt><a href="/content/10.html" target="_blank"><img
+                                src="{$lovegoodsData[6]['thumb']}" width="69"
+                                height="69"/></a></dt>
+                        <dd>
+                            <a href="/content/8.html" target="_blank" class="ms_yahei">原创设计【风车】项链 999千...</a>
+                            <br/>
+                            <span class="ms_yahei">￥{$lovegoodsData[9]['price']}</span>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="ws_love_hot_list ed_clear"  style="display: none">
+                <li>
+                    <dl class="ed_clear">
+                        <dt><a href="/content/11.html" target="_blank"><img
+                                src="{$hotgoodsData[0]['thumb']}" width="69"
+                                height="69"/></a></dt>
+                        <dd>
+                            <a href="/content/11.html" target="_blank" class="ms_yahei">【静 等风来】天然石榴石泰...</a>
+                            <br/>
+                            <span class="ms_yahei">￥{$hotgoodsData[0]['price']}</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="ed_clear">
+                        <dt><a href="/content/12.html" target="_blank"><img
+                                src="{$hotgoodsData[1]['thumb']}" width="69"
+                                height="69"/></a></dt>
+                        <dd>
+                            <a href="/content/12.html" target="_blank" class="ms_yahei">PTLIFE平田 花蕾吊灯 原创...</a>
+                            <br/>
+                            <span class="ms_yahei">￥{$hotgoodsData[1]['price']}</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="ed_clear">
+                        <dt><a href="/content/13.html" target="_blank"><img
+                                src="{$hotgoodsData[2]['thumb']}" width="69"
+                                height="69"/></a></dt>
+                        <dd>
+                            <a href="/content/13.html" target="_blank" class="ms_yahei">SOYE原创设计潮牌 经典...</a>
+                            <br/>
+                            <span class="ms_yahei">￥{$hotgoodsData[2]['price']}</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="ed_clear">
+                        <dt><a href="/content/14.html" target="_blank"><img
+                                src="{$hotgoodsData[3]['thumb']}" width="69"
+                                height="69"/></a></dt>
+                        <dd>
+                            <a href="/content/14.html" target="_blank" class="ms_yahei">vintage 手工包 复古包 牛...</a>
+                            <br/>
+                            <span class="ms_yahei">￥{$hotgoodsData[3]['price']}</span>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="ed_clear">
+                        <dt><a href="/content/15.html" target="_blank"><img
+                                src="{$hotgoodsData[4]['thumb']}" width="69"
+                                height="69"/></a></dt>
+                        <dd>
+                            <a href="/content/15.html" target="_blank" class="ms_yahei">可定制字母】那儿nar家饰 — 爱...</a>
+                            <br/>
+                            <span class="ms_yahei">￥{$hotgoodsData[4]['price']}</span>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="goodsInfoR fr">
+        <style>
+            .pop a {
+                color: #229CA0;
+                text-decoration: none;
+            }
+
+            .pop a:hover {
+                text-decoration: underline;
+            }
+
+            .bold_mly {
+                color: #F47238;
+                font-weight: bold;
+            }
+
+            .bold_num {
+                color: #000;
+                font-weight: bold;
+            }
+        </style>
+
+        <div class="ware_cen" id="shopping_cart" style="display:none;position: absolute; top:473px; right: 40px;  border: 1px solid #77B500;width:404px;height:120px;font-size:14px;font-family:宋体;background-color: #FCFCF8;z-index: 99 ">
+            <div class="join_car" style="height:120px">
+                <ul class="join_info">
+                    <li class="join_car_message">宝贝已成功加入到购物车!</li>
+                    <li class="join_car_count">购物车共有<span class="n_kind"></span>种宝贝，合计<span
+                            class="n_kind_amount"></span>元
+                    </li>
+                    <li class="pay_button"><a style="cursor:pointer" target="_blank" value="查看购物车"
+                                              onclick="location.href='http://www.wowsai.com/index.php?app=cart'"><img
+                            src="__STATIC__/home/content/picture/pay_now.png" border="0"/></a></li>
+                    <p style="position:absolute; right:5px; top:10px; padding-left:10px;"><img
+                            src="__STATIC__/home/content/picture/close.gif" style="margin-right:3px;"/><a
+                            href="javascript:launchClose()" style="color:#8a8a8a; text-decoration:none;">关闭</a></p>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right_top">
+            <div class="clear"></div>
+
+            <div class="right_top_left">
+                <div>
+                    <?php foreach ( $goodsData as $v ): ?>
+                    <img src="{$v['pics']}" width="400" alt=""/>
+                    <?php break; endforeach; ?>
+                    <div class="addLoveNew">
+                        <a href="javascript:add_best_love(183180)" class="fl"></a>
+                        <p class="fr size14">4</p>
+                    </div>
+                </div>
+                <div class="right_top_left3">
+                    <div class="right_top_left3_r">
+                        <script type="text/javascript" src="__STATIC__/home/content/js/jia.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="goodsInfoRight fr">
+                <h2>{$goodsData[0]['content']}</h2>
+
+                <p class="goods_info_right_price">
+                    <span class="goods_info_right_text">价&nbsp;&nbsp;&nbsp;&nbsp;格：</span>
+                    <span class="goods_info_right_price_yes ju" style="font-size:22px;" id="general_money">￥{$goodsData[0]['price']}</span>
+                </p>
+                <input type="hidden" id="zhekou" value="">
+                <input type="hidden" id="jianmoney" value="">
+                <p class="goods_info_right_address_info">
+                    <span class="goods_info_right_text" style="height:20px;">运&nbsp;&nbsp;&nbsp;&nbsp;费：</span>
+                <ul class="goods_info_right_address">
+                    <li class="store_add">四川省 成都</li>
+                    <li class="add_text">至</li>
+                    <li class="buyer_add" style="border: 1px solid white;background: white;"><span
+                            id="now_region">吉林省</span><img src="__STATIC__/home/content/picture/down_add.gif"/></li>
+                </ul>
+                </p>
+                <ul class="goods_info_kuaidi" id="shipping_mode"></ul>
+                <div class="clear"></div>
+                <div class="address_area_over" style="left:846.5px;top: 305px;display:none;" id="shippings">
+                    <dl>
+                        <dt>请选择你的收货城市</dt>
+                        <dd><img src="__STATIC__/home/content/picture/chazi.gif" onclick="closeShippings()"/></dd>
+                    </dl>
+                    <p class="dangqian_city">你当前的所在地：<a href="javascript:selectShippings('621','吉林省');">吉林省</a></p>
+                    <ul class="tb-clearfix">
+                    </ul>
+                </div>
+
+                <div class="goodsInfoRgui">
+                    <input type="hidden" id="duigou_img"
+                           value="http://img3.wowsai.com/themes/store/newwowsai/styles/default/good_new/duigou_new.gif">
+
+                    <?php foreach ( $cargoData as $c ): ?>
+                    <dl class="goods_info_right_guige_one" style="margin-top:3px;">
+                        <dt style="margin-top:15px;">颜色分类：</dt>
+                        <dd>
+                            <ul class="list_color">
+                                <li onclick="goods_color_check(this,183180);"><?php echo $c['attribute'] ?>
+                                    <span style="display: none;">
+                                    <img src="__STATIC__/home/content/picture/duigou_new.gif"/>
+                                </span>
+                                </li>
+                            </ul>
+
+                        </dd>
+                    </dl>
+
+                    <dl class="goods_info_right_guige_one" style="margin-top:3px; ">
+                        <dt>购买数量：</dt>
+                        <dd style="margin-top:13px;">
+                            <span class="gmsl_jian_but"><a href="javascript:quantity_onclick(0)">-</a></span>
+                            <input type="text" class="num_input" id="quantity" value="1" name="num"/>
+                            <span class="gmsl_jia_but"><a href="javascript:quantity_onclick(1)">+</a></span>
+                            <span style="margin-left:9px; color:#8b8a8a;">库存<span
+                                    id="limit_num"><?php echo $c['total'] ?></span>件</span>
+                            <input type="hidden" id="shopping_amount" value=""/>
+                        </dd>
+                    </dl>
+                    <?php break; endforeach; ?>
+                </div>
+                <div class="clear"></div>
+                <div class="goodsRightBtn">
+                    <a href="javascript:;" id="add" class="BuyBtn radius center size18">加入购物车</a>
+                </div>
+                <input type="hidden" name="id" value="{$goodsData[0]['id']}">
+                <input type="hidden" name="name" value="{$goodsData[0]['gname']}">
+                <input type="hidden" name="price" value="{$goodsData[0]['price']}">
+                <input type="hidden" name="options" value="{$cargoData[0]['attribute']}">
+                <input type="hidden" name="pics" value="{$goodsData[0]['pics']}">
+            </div>
+
+            <!--加入购物车-->
+            <script type="text/javascript">
+                $(function () {
+                    $('#add').click(function () {
+                        var id = $('input[name=id]').val();
+                        var name = $('input[name=name]').val();
+                        var num = $('input[name=num]').val();
+                        var price = $('input[name=price]').val();
+                        var pics = $('input[name=pics]').val();
+                        var options = $('input[name=options]').val();
+                        var data = {
+                            'id': id,
+                            'name': name,
+                            'num': num,
+                            'price': price,
+                            'options': options,
+                            'pics': pics
+                        };
+                        $.ajax({
+                            url: '/home/cart/add',
+                            data: data,
+                            type: 'post',
+                            //服务器返回的数据类型
+                            dataType: 'json',
+                            success: function (msg) {
+                                alert('购物添加成功');
+                            }
+                        })
+                    })
+                })
+            </script>
+            <!--加入购物车结束-->
+
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+
+
+        <div class="right_bottom">
+        </div>
+
+
+        <div class="clear"></div>
+
+        <div class="nav_sp" style="width:828px;">
+            <ul>
+                <li class="select" style="width:828px;"><a href="javascript:void(0)" onclick="goods_info_show(0)" style="width:828px;font-size: 20px;font-weight: 700">产品详情</a></li>
+                <!--<li><a href="javascript:void(0)" onclick="goods_info_show(1)">买家评价</a></li>-->
+                <!--<li><a href="javascript:void(0)" onclick="goods_info_show(2)">购买咨询</a></li>-->
+                <!--<li><a href="javascript:void(0)" onclick="goods_info_show(3)">产品咨询</a></li>-->
+            </ul>
+        </div>
+        <div class="goods_info_area">
+
+            <div class="spxq" style="height:20px;"></div>
+            <ul class="detpic" style="text-align: center;">
+            </ul>
+            <div class="default" style="width:780px;overflow-x:hidden;padding-left:18px;"><!DOCTYPE html>
+                {$goodsData[0]['details']}
+            </div>
+            <div class="clear"></div>
+            <div class="goods_info_area" style="display:none;"></div>
+
+            <div class="goods_info_area" style="display:none;"></div>
+
+            <div class="goods_info_area" style="display:none;"></div>
+
+            <div id="LoadDiv" align="center" style="margin-top:10px;display:none;">
+                <img src="__STATIC__/home/content/picture/loading.gif"/>
+            </div>
+            <div class="clear"></div>
+
+
+            <script>
+                function rankings(type){
+                    $("#ranking"+type).attr("class","ms_yahei fontSize love_hot_checked");
+                        if(type=="1"){
+                            $("#ranking2").attr("class","ms_yahei fontSize");
+                            $(".ws_love_hot_list").eq(0).show();
+                            $(".ws_love_hot_list").eq(1).hide();
+                            }else{
+                            $("#ranking1").attr("class","ms_yahei fontSize");
+                            $(".ws_love_hot_list").eq(1).show();
+                            $(".ws_love_hot_list").eq(0).hide();
+                        }
+                }
+            </script>
+            <script type="text/javascript">
+                /*搭配套餐的幻灯切换*/
+                $(".pic_right").click(function () {
+                    var list = $(".pic_middle_content");
+                    if (!list.is(":animated")) {
+                        var left = list.css('left');
+                        left = Number(left.replace("px", ""));
+                        var num = Number($("#compage_num").val());
+                        if (num > 1) {
+                            var gnm = -(left / 682);
+                            var tnum = gnm + 2;
+                            var eqnum = gnm + 1;
+                            if ((num - 1) == gnm) {
+                                eqnum = 0;
+                                tnum = 1;
+                            }
+                            $(".pic_middle_top1").html("搭配套餐" + tnum);
+                            $(".pic_middle_top2 span").attr("id", "");
+                            $(".pic_middle_top2 span:eq(" + eqnum + ")").attr("id", "dian");
+                            var maxright = "-" + ((num - 1) * 682) + "px";
+                            if (list.css('left') == maxright) {
+                                list.animate({left: "-=" + maxright}, "slow");
+                            } else {
+                                list.animate({left: "-=682px"}, "slow");
+                            }
+                        }
+                    }
+                });
+                $(".pic_left").click(function () {
+                    var list = $(".pic_middle_content");
+                    if (!list.is(":animated")) {
+                        var left = list.css('left');
+                        left = Number(left.replace("px", ""));
+                        var num = Number($("#compage_num").val());
+                        if (num > 1) {
+                            var gnm = -(left / 682);
+                            var tnum = gnm;
+                            var eqnum = gnm - 1;
+                            if (gnm == 0) {
+                                tnum = num;
+                                eqnum = num - 1;
+                            }
+                            $(".pic_middle_top1").html("搭配套餐" + tnum);
+                            $(".pic_middle_top2 span").attr("id", "");
+                            $(".pic_middle_top2 span:eq(" + eqnum + ")").attr("id", "dian");
+                            var maxright = "-" + ((num - 1) * 682) + "px";
+                            if (list.css('left') == "0px") {
+                                list.animate({left: "+=" + maxright}, "slow");
+                            } else {
+                                list.animate({left: "+=682px"}, "slow");
+                            }
+                        }
+                    }
+                });
+                //买家地址区域的样式
+                $(".buyer_add").hover(function () {
+                    $(this).css("border", "1px solid #49abc7");
+                    $(this).css("background", "#e6f6fa");
+                }, function () {
+                    $(this).css("border", "1px solid white");
+                    $(this).css("background", "white");
+
+                });
+                //当买家点击收货地址时，收货地址弹出层出现
+                $(".buyer_add").click(function () {
+                    var add_weizhi = $(".goods_info_right_text").offset();
+                    $(".address_area_over").css({left: add_weizhi.left + "px", top: add_weizhi.top + 90 + "px"});
+                    $(".address_area_over").show();
+                })
+                //点击加入最爱按钮后，查看还有哪些人喜欢
+                $("#jrza_but a").hover(function () {
+                    $("#jrza_but a img").attr("src", "http://img3.wowsai.com/themes/store/newwowsai/styles/default/good_new/add_love_hover.jpg");
+                }, function () {
+                    $("#jrza_but a img").attr("src", "http://img3.wowsai.com/themes/store/newwowsai/styles/default/good_new/add_love.jpg");
+                })
+                //点击查看更多弹出层，赠品弹出层出现
+                $("#zengpin_more").click(function () {
+                    var zengpin_weizhi = $(".goods_info_right_zengpin").offset();
+                    $(".zengpin_area_over").css({
+                        left: zengpin_weizhi.left + "px",
+                        top: zengpin_weizhi.top + 70 + "px"
+                    });
+                    $(".zengpin_area_over").show();
+                })
+                //点击赠品弹出层的关闭按钮，赠品弹出层消失
+                $("#zengpin_close").click(function () {
+                    $(".zengpin_area_over").hide();
+                })
+                //当鼠标滑过省份的时候，出现对应的城市的样式
+                $(".address_sheng").hover(function () {
+                    $(".address_shi").hide();
+                    var address_weizhi = $(this).position();
+                    $(this).next(".address_shi").css({
+                        left: address_weizhi.left + 25 + "px",
+                        top: address_weizhi.top + 20 + "px"
+                    });
+                    $(this).next(".address_shi").show();
+                })
+                //马上购物按钮的样式
+                $("#add_buy").hover(function () {
+                    $(this).attr("src", "http://img3.wowsai.com/themes/store/newwowsai/styles/default/good_new/add_car_hover.jpg");
+                }, function () {
+                    $(this).attr("src", "http://img3.wowsai.com/themes/store/newwowsai/styles/default/good_new/add_car.jpg");
+                })
+                //尺码选择的样式效果
+                /*$(".list_chima li").not($(".checked")).hover(function(){
+                 $(".list_chima li").not($(".checked")).css({"border":"1px solid #c8c9ce","padding":"1px 10px"});
+                 $(this).not($(".checked")).css({"border":"2px solid #77b500","padding":"0 9px"});
+                 },function(){
+                 $(".list_chima li").not($(".checked")).css({"border":"1px solid #c8c9ce","padding":"1px 10px"});
+                 })
+                 /*$(".list_chima li").click(function(){
+                 $(".list_chima li").css({"border":"1px solid #c8c9ce","padding":"1px 10px"});
+                 $(".list_chima li").children("span").hide();
+                 $(".list_chima li").removeClass("checked");
+                 $(this).css({"border":"2px solid #77b500","padding":"0 9px"});
+                 $(this).children("span").show();
+                 $(this).addClass("checked");
+                 })*/
+                //颜色选择的样式效果
+                $(".list_color li").not($(".checked")).hover(function () {
+                    $(".list_color li").not($(".checked")).css({"border": "1px solid #c8c9ce", "padding": "1px 10px"});
+                    $(this).not($(".checked")).css({"border": "2px solid #77b500", "padding": "0 9px"});
+                }, function () {
+                    $(".list_color li").not($(".checked")).css({"border": "1px solid #c8c9ce", "padding": "1px 10px"});
+                })
+                $(".list_color li").click(function () {
+                    $(".list_color li").css({"border": "1px solid #c8c9ce", "padding": "1px 10px"});
+                    $(".list_color li").children("span").hide();
+                    $(".list_color li").removeClass("checked");
+                    $(this).css({"border": "2px solid #77b500", "padding": "0 9px"});
+                    $(this).children("span").show();
+                    $(this).addClass("checked");
+                })
+            </script>
+
+
+            <style type="text/css">
+                .custom_made_layer1, .custom_made_layer2 {
+                    position: absolute;
+                    top: 100px;
+                    z-index: 10000;
+                    display: none;
+                }
+            </style>
+            <div class="custom_made_layer1">
+                <div class="custom_made_body">
+                    <div class="custom_made_con" id="custom_made_con1"></div>
+                </div>
+            </div>
+            <div class="custom_made_layer2">
+                <div class="custom_made_body">
+                    <div class="custom_made_con" id="custom_made_con2"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+            $(".notice_close").click(function () {
+                $(".notice_con").hide();
+            })
+            var cate_name = [["\u9970\u54c1\u9970\u7269", "http:\/\/www.wowsai.com\/shipin.html"], ["\u624b\u94fe\u624b\u956f", "http:\/\/www.wowsai.com\/shoulian\/"], ["\u624b\u956f", "http:\/\/www.wowsai.com\/shoulian\/shouzhuo\/"]];
+            var cate_arr = eval(cate_name);
+            window["_BFD"] = window["_BFD"] || {};
+            _BFD.BFD_INFO = {
+                "id": "183180",   //这里需要获取的是您网站商品id号，string类型；使用原来的item_id值即可。
+                "name": "私人定制招财镯子 泰国老银匠纯手工S990千足银手镯 情侣款送刻字",  //当前商品的名称,string类型；使用原来的item_name值即可。
+                "item_link": "http://www.wowsai.com/goods/183180.html",// 当前商品的完整链接url，string类型.使用原来的item_link值即可。
+                "small_image_link": "http://img5.wowsai.com/data/files/store_1269466/goods_16/ssmall_201501171233361058.jpg",// 当前商品的小图片的完整链接url，string类型。这里需要您额外再取。这样是为了我们推荐栏显示的是小图，有利于页面的加载。貌似把big换成small就可以了
+                "big_image_link": "http://img4.wowsai.com/data/files/store_1269466/goods_16/big_201501171233361058.jpg",// 当前商品的大图片的完整链接url，string类型。使用原来的image_link即可
+                "price": '420.00',//网站价；使用原来的item_price即可
+                "category_tree": cate_arr, // 当前商品的类别详细信息，第一个元素为类别名称，第二个元素为类别地址，2维数组；在原来的item_category基础上扩展
+                "brand": "",//当前商品所属品牌名称；如果能取到最好
+                "user_id": "0" //当前用户的user_id，string类型。注意：user_id不是用户的真实注册名，而是其注册名的编号,如果匿名用户为0或者为空‘’；使用原来的user_id即可
+            };
+            _BFD.script = document.createElement("script");
+            _BFD.script.type = 'text/javascript';
+            _BFD.script.async = true;
+            _BFD.script.charset = 'utf-8';
+            _BFD.script.src = (('https:' == document.location.protocol ? 'https://ssl-static1' : 'http://static1') + '.baifendian.com/service/wasaiwang/wsw_goods_new.js');
+            document.getElementsByTagName("head")[0].appendChild(_BFD.script);
+        </script>
+
+        <!--<script language="javascript" src="__STATIC__/home/content/js/analytics_wow.js"></script>-->
+
+    </div>
+    <div class="footer_new">
+        <div class="footerTop">
+            <div class="footerTopCon fixed">
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+                <script type="text/javascript" src="__STATIC__/home/content/js/new_wowsai.js" charset="utf-8"></script>
+                <script type="text/javascript" src="__STATIC__/home/content/js/popup.js"></script>
+
+            </div>
+        </div>
+
+    </div>
+    </body>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-24876943-1']);
+        _gaq.push(['_addOrganic', 'baidu', 'word']);
+        _gaq.push(['_addOrganic', 'soso', 'w']);
+        _gaq.push(['_addOrganic', 'youdao', 'q']);
+        _gaq.push(['_addOrganic', 'sogou', 'query']);
+        _gaq.push(['_setDomainName', '.wowsai.com']);
+        _gaq.push(['_setAllowHash', false]);
+        _gaq.push(['_trackPageLoadTime']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F042bfe5d3298a8b8706dfe247c7beb2e' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script src="__STATIC__/home/content/js/wow.js" language="JavaScript"></script>
+
+    <script language="javascript">
+        $(".messageSend").hover(function () {
+            $(this).css({"color": "#229ca0"});
+            $(".messageBg").css({"background-position": "0 -60px"});
+        }, function () {
+            $(this).css({"color": "#898989"});
+            $(".messageBg").css({"background-position": "0 -48px"});
+        })
+
+    </script>
+    <link href="__STATIC__/home/content/css/good_right.css" rel="stylesheet" type="text/css"/>
+    <link href="__STATIC__/home/content/css/best_love.css" rel="stylesheet" type="text/css"/>
+    <link href="__STATIC__/home/content/css/shop_car.css" rel="stylesheet" type="text/css"/>
+    <link href="__STATIC__/home/content/css/custom_made.css" rel="stylesheet" type="text/css"/>
+    <link href="__STATIC__/home/content/css/detail.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="__STATIC__/home/content/js/goodsinfo_new.js" charset="utf-8"></script>
+    <script type="text/javascript" src="__STATIC__/home/content/js/regions.js" charset="utf-8"></script>
+    <script type="text/javascript">
+
+        //初始化配送数据
+        var shippings = {};
+        try {
+//初始化区域显示层
+            $(function () {
+                $.each(regions_areas, function (i, n) {
+                    //alert(n.regions);
+                    if (n.regions) {
+                        $.each(n.regions, function (j, m) {
+                            // alert( "Item #" + j + ": " + m.toSource());
+                            if (m) {
+                                $(".tb-clearfix").append('<li><a href="javascript:selectShippings(' + m.region_id + ',\'' + m.region_name + '\');" >' + m.region_name + '</a></li>');
+                            }
+                        });
+                    }
+                });
+//调取物流配送数据
+            });
+        } catch (error) {
+            alert(error);
+        }
+        function choiceShipping() {
+            $("#shippings").toggle('normal');
+            //$("#shippings").slideDown('slow');
+
+        }
+        function closeShippings() {
+            $("#shippings").slideUp('slow');
+        }
+        //选择省的运费
+        function selectShippings(region_id, region_name) {
+            var parse_mode = {'ems': 'EMS', 'express': '快递', 'sf': '顺丰', 'surface': '平邮'};
+            $("#shipping_mode").empty();
+            $("#now_region").html(region_name);
+            if (!jQuery.isEmptyObject(shippings)) {
+                if (shippings[region_id] && shippings[region_id]['express']) {
+                    $("#shipping_mode").append('<li style="width:85px;float:left;">' + parse_mode['express'] + '：' + shippings[region_id]['express'] + '元</li>');
+                } else if (shippings[0]['express']) {
+                    $("#shipping_mode").append('<li style="width:85px;float:left;">' + parse_mode['express'] + '：' + shippings[0]['express'] + '元</li>');
+                }
+                if (shippings[region_id] && shippings[region_id]['ems']) {
+                    $("#shipping_mode").append('<li style="width:85px;float:left;">' + parse_mode['ems'] + '：' + shippings[region_id]['ems'] + '元</li>');
+                } else if (shippings[0]['ems']) {
+                    $("#shipping_mode").append('<li style="width:85px;float:left;">' + parse_mode['ems'] + '：' + shippings[0]['ems'] + '元</li>');
+                }
+                if (shippings[region_id] && shippings[region_id]['sf']) {
+                    $("#shipping_mode").append('<li style="width:85px;float:left;">' + parse_mode['sf'] + '：' + shippings[region_id]['sf'] + '元</li>');
+                } else if (shippings[0]['sf']) {
+                    $("#shipping_mode").append('<li style="width:85px;float:left;">' + parse_mode['sf'] + '：' + shippings[0]['sf'] + '元</li>');
+                }
+                if (shippings[region_id] && shippings[region_id]['surface']) {
+                    $("#shipping_mode").append('<li style="width:85px;float:left;">' + parse_mode['surface'] + '：' + shippings[region_id]['surface'] + '元</li>');
+                } else if (shippings[0]['surface']) {
+                    $("#shipping_mode").append('<li style="width:85px;float:left;">' + parse_mode['surface'] + '：' + shippings[0]['surface'] + '元</li>');
+                }
+            } else {
+                $("#shipping_mode").html('<a><span>卖家承担运费</span></a>');
+                //alert("配送数据为空，请商家给商品添加配送信息！");
+            }
+            closeShippings();
+        }
+        /* buy */
+        function buy() {
+            var limit_num = Number($("#limit_num").html());
+            var quantity = Number($("#quantity").val());
+            var shopping_amount = Number($("#shopping_amount").val());
+            if (quantity > shopping_amount && shopping_amount > 0) {
+                alert("对不起,您填写的购买数量大于限购数量" + shopping_amount + "个!");
+                return;
+            }
+            if (quantity > limit_num) {
+                alert("对不起,您填写的购买数量大于库存量!");
+                return;
+            }
+            var spec_id = goodsspec.getSpec();
+//	console.log(goodsspec)
+//	console.log(spec_id)
+            if (spec_id == null) {
+                //console.log();
+                alert(lang.select_specs);
+                return;
+            }
+            var quantity = $("#quantity").val();
+            if (quantity == '') {
+                alert(lang.input_quantity);
+                return;
+            }
+            if (parseInt(quantity) < 1) {
+                alert(lang.invalid_quantity);
+                return;
+            }
+            add_to_cart(spec_id, quantity);
+        }
+
+        function launchClose() {
+            slideUp_fn();
+            //setTimeout(slideUp_fn, 1000);
+        }
+        function launchClose1() {
+            slideUp_fn1();
+            //setTimeout(slideUp_fn1, 1000);
+        }
+
+
+        //增加购买数量
+        function addsalenum() {
+            var orig = Number($('#quantity').val());
+            $('#quantity').val(orig + 1);
+        }
+        //减少购买数量
+        function reducesalenum() {
+            var orig = Number($('#quantity').val());
+            if (orig > 1) {
+                $('#quantity').val(orig - 1);
+            }
+        }
+
+        //设置ifram的样式
+        function SetWinHeight(obj) {
+            var win = obj;
+            if (document.getElementById) {
+                if (win && !window.opera) {
+                    var bHeight = win.contentWindow.document.body.scrollHeight;
+                    var dHeight = win.contentWindow.document.documentElement.scrollHeight;
+                    var height = bHeight > dHeight ? bHeight : dHeight;
+                    win.height = height;
+                    //  win.height=win.contentWindow.document.documentElement.scrollHeight;
+
+                }
+            }
+        }
+        //购买数量的加减
+        function quantity_onclick(type) {
+            var quantity = Number($("#quantity").val());
+            var limit_num = Number($("#limit_num").html());
+            var num = 0;
+            if (type == 0) {
+                num = (quantity < 2) ? 1 : (quantity - 1);
+            } else {
+                num = (quantity >= limit_num) ? limit_num : (quantity + 1);
+            }
+            $("#quantity").val(num);
+        }
+        //
+        $(function () {
+            $("#show_small_des").click(function () {
+                $(this).hide();
+                $("#hidden_small_des").show();
+            });
+        });
+        //
+        var specs = new Array();
+        var specQty = new Array();
+        var defSpec = new Array();
+        var goods = new Array();
+        var ar = new Array();
+        ar.push(new Array(344212, 'L', '青花', 420.00, 50));
+        ar.push(new Array(344213, 'XXXL', '青釉', 9999.00, 50));
+        //ar.push(new Array(344213, '拍之前需咨询客服是否有货', '约50g左右现货', 700.00, 50));
+        //ar.push(new Array(344214, '拍之前需咨询客服是否有货', '约70g左右现货', 980.00, 50));
+        //ar.push(new Array(344215, '拍之前需咨询客服', '定制', 100.00, 100));
+        specs[0] = ar;
+        specQty[0] = 2;
+        goods.push(183180);
+        var goodsspec = new goodsspec(specs, specQty, defSpec, goods);
+        var is_compages = 0;
+        //]]>
+    </script>
+    <style type="text/css">
+        body, td, th {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+    </html>
+</div>
+{/block}

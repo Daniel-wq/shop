@@ -1,0 +1,81 @@
+﻿/*公共的样式*/
+a,a:hover{ text-decoration:none;}
+.ms_yahei{ font-family:"Microsoft Yahei",微软雅黑;};
+.left{ float:left;}
+.fontSize{ font-size:14px;}
+.fontSize1{ font-size:18px;}
+.color1{ color:#5c5c5c;}
+.color2{ color:#898989;}
+.ed_clear:after{ clear:both; content:"."; display:block; height:0; line-height:0; font-size:0; overflow:hidden; visibility:hidden;}
+/**店铺首页样式**/
+.store-banner{ height:127px; background:url(../images/store_banner_yy.gif) bottom no-repeat; margin:0 0 10px 0;}
+.custom_area{ height:516px; background:#5c5c5c; margin:0 0 20px 0;}
+
+.store-index-nav{width:978px; height:45px; border-bottom:2px solid #1db9be; background:url(../images/twolevelpage.png) no-repeat -347px 0px;}
+.store-index-nav-price{ height:45px; border-bottom:2px solid #1db9be; float:left;}
+.store-index-nav-price li{float:left; height:35px; padding:10px 0 0 0; margin-right:6px;}
+.store-index-nav-price li a{font-size:12px;  line-height:23px; float:left; padding-left:10px;}
+.store-index-nav-price li a span{ line-height:23px; padding-right:10px; float:left; cursor:pointer;}
+.store-index-nav-price li a:hover{ background:url(../images/calc.gif) no-repeat scroll left -66px transparent; color:#229ca0;}
+.store-index-nav-price li a:hover span{ background:url(../images/calc.gif) no-repeat scroll right -92px transparent;}
+
+.store-index-nav-price li.current a,.store-index-nav-price li.current a:hover{ background:url(../images/calc.gif) no-repeat left -9px; color:white;}
+.store-index-nav-price li.current a span,.store-index-nav-price li.current a:hover span{ background:url(../images/calc.gif) no-repeat scroll right -38px transparent;}
+
+.line{ width:1px; height:23px; background:#c5c5c5; float:left; margin:10px 15px 0 0;}
+
+.store_info{ background:#f5f5f1; padding:20px 0 0 0;}
+.store_info h2{ color:#5c5c5c; font-size:20px; windth:210px; line-height:30px; padding:0 10px;}
+.store_info_list{ width:190px; margin:15px 0 0 10px; padding-bottom:8px; line-height:25px; border-bottom:1px dashed #e5e5e5;}
+.store_level span{ float:left;}
+.store_level img{ float:left; margin:5px 0 0 0;}
+.store_info_list li span{ color:#898989;}
+
+.store_info_other{ width:190px; border-bottom:1px dashed #e5e5e5; margin:15px 0 0 10px; padding-bottom:15px;}
+.store_info_other dl dt{ width:66px; height:66px; float:left;}
+.store_info_other dl dd{ width:114px; float:left; margin:0 0 0 10px; color:#898989;}
+.store_info_other dl dd p span a{ color:#229ca0;}
+.store_num_info{ margin:15px 0 0 0; color:#898989;}
+.store_num_info em{ font-style:normal; font-size:25px; color:#1db9be;}
+
+.brand_story{ width:190px; margin:15px 0 0 10px;}
+.brand_story p{ line-height:20px;}
+.brand_story p img{ float:left; margin-right:8px; margin-top:4px;}
+
+.store_save_share{ width:200px; height:44px; margin:15px 0 0 0; padding-bottom:27px;}
+.store_save_share a{ width:198px; height:44px; float:left; margin:0 1px 0 0;}
+.store_save{ background:url(../images/store_button2.png) no-repeat 0 0;}
+.store_save_already{background:url(../images/store_button1.gif) no-repeat 0 0;}
+.store_save:hover{ background:url(../images/store_button2.png) no-repeat 0 -45px;}
+
+
+
+.store_goods_cate{ padding:0 11px 17px; margin:20px 0 0 0; background:#f5f5f1;}
+.store_goods_cate h3{ height:31px; line-height:41px; font-size:14px; text-indent:5px;}
+.store_goods_cate_list{ width:188px;}
+.store_goods_cate_list li.cate_1f{ height:32px; background:url(../images/littlecate.png) 8px 13px white no-repeat; border-bottom:1px solid #c5c5c5; margin:10px 0 0 0; font-size:14px;}
+.store_goods_cate_list li.cate_2f{ height:22px; background:white; border-bottom:1px solid #c5c5c5; margin:2px 0 0 0;}
+.store_goods_cate_list li span{ float:right; margin-right:8px; color:#898989;}
+.store_goods_cate_list li a{ float:left; color:#229ca0; margin:0 0 0 17px;}
+.cate_1f span,.cate_1f a{ line-height:32px;}
+.cate_2f span,.cate_2f a{ line-height:22px; color:#cccccc;}
+
+
+
+.right_column{ width:730px; float:left; margin:0 0 0 20px;}
+.right_column dl{ text-align:center;}
+.right_column dl dt{ padding:20px 0;}
+.right_column dl dd{ font-size:20px; font-family:"Microsoft Yahei",微软雅黑; color:#BABAB8;}
+
+
+/*****新版产品详情页 最爱排行 热销排行*******/
+.ws_love_hot{ width:210px; margin-top:20px;}
+.ws_love_hot_nav a{ width:105px; height:40px; border-top:2px solid #f5f5f1; color:#229ca0; float:left; background:#f5f5f1; line-height:40px; text-align:center;}
+.ws_love_hot_nav a:hover,.ws_love_hot_nav a.love_hot_checked{ border-top-color:#229ca0; background:#ededed;}
+.ws_love_hot_list{ width:187px; border:1px solid #d9d9d9; padding:7px 12px 19px 9px}
+.ws_love_hot_list li{ float:left;}
+.ws_love_hot_list li dl{ margin-top:10px;}
+.ws_love_hot_list li dl dt{ width:74px; height:74px; border:1px solid #d9d9d9; padding:5px 0 0 5px; float:left;}
+.ws_love_hot_list li dl dd{ width:98px; height:81px; float:left; margin-left:8px;}
+.ws_love_hot_list li dl dd a{ color:#229ca0; height:40px;}
+.ws_love_hot_list li dl dd span{ color:#fd834c;}

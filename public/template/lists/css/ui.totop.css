@@ -1,0 +1,135 @@
+﻿/*
+|--------------------------------------------------------------------------
+| UItoTop jQuery Plugin 1.1
+| http://www.mattvarone.com/web-design/uitotop-jquery-plugin/
+|--------------------------------------------------------------------------
+*/
+
+#toTop {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:95px;
+	right:75px;
+	overflow:hidden;
+	width:56px;
+	height:56px;
+	border:none;
+	text-indent:-999px;
+	background:url(../images/totop1.gif) no-repeat left top;
+	z-index:99;
+}
+#toTopHover {
+	background:url(../images/totopd1.gif) no-repeat left ;
+	width:56px;
+	height:56px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}
+#toRegister {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:70px;
+	right:10px;
+	overflow:hidden;
+	width:51px;
+	height:51px;
+	border:none;
+	text-indent:-999px;
+	background:url(../images/toregister.gif) no-repeat left top;
+	
+	_position:absolute;
+	_bottom:atuo;
+	_top:expression(eval(document.documentElement.scrollTop));
+	_margin-top:33%;
+}
+
+#toRegisterHover {
+	background:url(../images/toregisterd.gif) no-repeat left ;
+	width:51px;
+	height:51px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+#chat_with_me {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:168px;
+	right:75px;
+	overflow:hidden;
+	width:56px;
+	height:56px;
+	border:none;
+	text-indent:-999px;
+	background:url(../images/chat_with_me.gif) no-repeat left top;
+	
+	_position:absolute;
+	_bottom:atuo;
+	_top:expression(eval(document.documentElement.scrollTop));
+	_margin-top:33%;
+	
+	z-index:99;
+	
+}
+#chat_with_meHover {
+	background:url(../images/chat_with_me2.gif) no-repeat left ;
+	width:56px;
+	height:56px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+#toRegister:active, #toRegister:focus {
+	outline:none;
+}
+#toLike {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:70px;
+	right:10px;
+	overflow:hidden;
+	width:51px;
+	height:51px;
+	border:none;
+	text-indent:-999px;
+	background:url(../images/tolike.gif) no-repeat left top;
+}
+
+#toLikeHover {
+	background:url(../images/toliked.gif) no-repeat left ;
+	width:51px;
+	height:51px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+#toLike:active, #toLike:focus {
+	outline:none;
+}
+#erweima{ width:56px; height:56px; background:url(../images/erweima.jpg) no-repeat
+; z-index:999; position:fixed; bottom:160px; right:75px; background-position:0 -72px; display:none;}
+#erweima:hover{ background-position:0 0;}
+#ewm_pic{ width:157px; height:189px; position:fixed; z-index:999; right:280px; bottom:160px; display:none;}

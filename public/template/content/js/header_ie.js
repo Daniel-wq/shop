@@ -1,0 +1,35 @@
+	function header_ajax(){
+	//显示个人主页信息列表 
+	$(".js_header_avatar,.ws_tip_gerenzhuye").hover(function(){
+			$(".js_header_avatar").css({"background":"url(/themes/mall/wowsai/styles/default/image_newwowsai/111.gif)"});
+			$(".ws_tip_gerenzhuye").show();
+		},function(){
+			$(".js_header_avatar").css({"background":"none"});
+			$(".ws_tip_gerenzhuye").hide();
+			
+			});
+	//显示站内信信息列表
+	$(".js_header_message,.tip_message").hover(function(){
+			$(".js_header_message").css({"border-color":"#e0dede"});
+			$(".tip_message").show();
+		},function(){
+			$(".js_header_message").css({"border-color":"#FCFCFC"});
+			$(".tip_message").hide();
+			});
+	//显示我的订单信息列表
+	$(".js_header_order,.tip_order").hover(function(){
+			$(".js_header_order").css({"background":"url(/themes/mall/wowsai/styles/default/image_newwowsai/222.gif)"});
+			$(".tip_order").show();
+		},function(){
+			$(".js_header_order").css({"background":"none"});
+			$(".tip_order").hide();
+			});
+	//显示卖家中心信息列表
+	$(".js_header_seller,.tip_seller").hover(function(){
+			$(".js_header_seller").css({"background":"url(/themes/mall/wowsai/styles/default/image_newwowsai/222.gif)"});
+			$(".tip_seller").show();
+		},function(){
+			$(".js_header_seller").css({"background":"none"});
+			$(".tip_seller").hide();
+			});
+	}

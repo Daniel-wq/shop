@@ -1,0 +1,32 @@
+﻿@charset "utf-8";
+/*页面底部*/
+#footer{width:100%;overflow: hidden;}
+.footer_main{ width:950px; margin:0 auto; position:relative; }
+.footerImg{}
+.footerImg li{ background:url(../images/footer.jpg) no-repeat left top; height:61px; float:left;}
+.footerImg li.li_1{ width:107px; background-position:left -61px;}
+.footerImg li.li_2{ width:136px; }
+.footerImg li.li_3{ width:129px; background-position:left -121px;}
+.footerImg li.li_4{ width:121px; background-position:left -183px;}
+.footerImg li.li_5{ width:119px; background-position:left -244px;}
+.footerImg li.li_6{ width:135px; background-position:left -305px;}
+.footerImg li.li_7{ width:100px; background-position:left -366px; position:relative;}
+.footerImg li.li_8{ width:116px; background-position:left -427px;}
+.friendlink{ display:none;  position:absolute;top:-55px;left:-763px; background:#2e2e2e;  height:45px; overflow:hidden; width:960px; padding:5px 10px;}
+.friendlink span{ font-size:14px; font-weight:bold; }
+.friendlink a{margin:0 5px; color:#fff; line-height:21px;}
+.friendlink a:hover{ text-decoration:underline;}
+.friendlink a.onemove{margin-left:10px; font-size:14px; color:#f00;}
+.copyright{ text-align:center; color:#7e7e7e; padding:21px 0 38px 0; height:24px; line-height:24px;}
+.copyright a{color:#7E7E7E;}
+#friendlink a.moveFriendlink{ width:100%; height:100%; display:block;}
+/*页面底部*/
+
+.foot_more{ height:160px; padding-top:50px;}
+.foot_more{ padding-left:94px;}
+.elf_booking .elf_table{ margin-left:160px; margin-top:40px;}
+.elf_booking .elf_table input{ color:#909090; height:20px; border:0px; margin-right:4px;}
+.elf_booking .elf_table li{ color:#000000; line-height:20px;}
+.elf_booking .elf_table #anycall{ margin-left:120px;}
+
+.friend_link{ margin-left:80px;}

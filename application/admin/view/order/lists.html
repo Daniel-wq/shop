@@ -1,0 +1,80 @@
+{extend name='base'/}
+{block name='content'}
+<!-- TAB NAVIGATION -->
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#tab1">订单列表</a></li>
+</ul>
+<div class="panel panel-default">
+	  <div class="panel-heading">
+			<h3 class="panel-title">栏目管理</h3>
+	  </div>
+	  <div class="panel-body">
+			<table class="table table-hover">
+				<thead>
+				<tr>
+					<th width="5%">编号</th>
+					<th>订单号</th>
+					<th>商品名称</th>
+					<th>商品数量</th>
+					<th>商品总价</th>
+					<th>购买者</th>
+					<th>商品状态</th>
+					<th width="20%">操作</th>
+				</tr>
+				</thead>
+				<tbody>
+				<?php foreach ( $flowsInfo as $k=>$v ): ?>
+				<tr>
+					<td>{$k+1}</td>
+					<td>{$v['order_name']}</td>
+					<td>
+						<?php
+                        $data = json_decode($v['goods_info'],true);
+                        foreach($data['goods'] as $k){
+                            echo $k['name'];
+						}
+						?>
+					</td>
+					<td>
+						<?php
+                        $data = json_decode($v['goods_info'],true);
+                        foreach($data['goods'] as $k){
+                            echo $k['num'];
+						}
+						?>
+					</td>
+					<td>{$v['total']}</td>
+					<td>{$v['addrName']}</td>
+					<td>{$v['status']}</td>
+					<td>
+						<a href="{:url('admin/order/update',['id'=>$v['fid']])}" class="btn btn-primary">编辑</a>
+
+						<!--{if condition="$v['status'] != '已发货'"}-->
+						<!--<a href="javascript:if(confirm('确定删除吗？')) location.href='/orderdel/{$v['fid']}.html'" class="btn btn-danger">删 除</a>-->
+						<!--{else /}-->
+						<!--<span style="text-decoration: line-through" class="btn btn-danger">删 除</span>-->
+						<!--{/if}-->
+					</td>
+				</tr>
+				<?php endforeach; ?>
+				</tbody>
+			</table>
+	  </div>
+</div>
+<script>
+    function del(id) {
+        require(['util'], function (util) {
+            util.confirm('确定删除吗?',function(){
+                $.ajax({
+                    url:'/admin/goods/' + id,
+                    method:'DELETE',
+                    success:function(response){
+                        util.message(response.msg,'refresh');
+                    }
+                })
+            })
+        })
+    }
+</script>
+
+{/block}

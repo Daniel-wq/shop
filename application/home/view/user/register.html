@@ -1,0 +1,310 @@
+﻿{extend name='base'/}
+{block name='content'}
+<link href="__STATIC__/home/register/css/zhuce.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+//注册表单验证
+$(function(){
+    $('#register_form').validate({
+        errorPlacement: function(error, element){
+            var error_td = element.parent('td').next('td');
+            error_td.find('.field_notice').hide();
+            error_td.append(error);
+        },
+        success       : function(label){
+            label.addClass('validate_right').text('OK!');
+        },
+        onkeyup: false,
+        rules : {
+            user_name : {
+                required : true,
+                byteRange: [3,25,'utf-8'],
+                remote   : {
+                    url :'index.php?app=member&act=check_user&ajax=1',
+                    type:'get',
+                    data:{
+                        user_name : function(){
+                            return $('#user_name').val();
+                        }
+                    },
+                    beforeSend:function(){
+                        var _checking = $('#checking_user');
+                        _checking.prev('.field_notice').hide();
+                        _checking.next('label').hide();
+                        $(_checking).show();
+                    },
+                    complete :function(){
+                        $('#checking_user').hide();
+                    }
+                }
+            },
+            password : {
+                required : true,
+                minlength: 6
+            },
+            password_confirm : {
+                required : true,
+                equalTo  : '#password'
+            },
+            email : {
+                required : true,
+                email    : true,
+                remote   : {
+                    url :'index.php?app=member&act=check_email&ajax=1',
+                    type:'get',
+                    data:{
+                        email : function(){
+                            return $('#email').val();
+                        }
+                    },
+                    beforeSend:function(){
+                        var _checking = $('#checking_email');
+                        _checking.prev('.field_notice').hide();
+                        _checking.next('label').hide();
+                        $(_checking).show();
+                    },
+                    complete :function(){
+                        $('#checking_email').hide();
+                    }
+                }
+            },
+            captcha : {
+                required : true,
+                remote   : {
+                    url : 'index.php?app=captcha&act=check_captcha',
+                    type: 'get',
+                    data:{
+                        captcha : function(){
+                            return $('#captcha1').val();
+                        }
+                    }
+                }
+            },
+            agree : {
+                required : true
+            }
+        },
+        messages : {
+            user_name : {
+                required : '请填写用户名',
+                byteRange: '用户名必须在3-25个字符之间',
+                remote   : '您提供的用户名已存在'
+            },
+            password  : {
+                required : '请填写密码',
+                minlength: '密码长度应在6-20个字符之间'
+            },
+            password_confirm : {
+                required : '您必须再次确认您的密码',
+                equalTo  : '两次输入的密码不一致'
+            },
+            email : {
+                required : '您必须提供您的电子邮箱',
+                email    : '这不是一个有效的电子邮箱',
+                remote  : '这个电子邮箱已存在'
+            },
+            captcha : {
+                required : '请输入右侧图片中的文字',
+                remote   : '验证码错误'
+            },
+            agree : {
+                required : '您必须阅读并同意该协议,否则无法注册'
+            }
+        }
+    });
+  //表单的输入框获取焦点
+    $("#register_form input").focus(function (){
+    	if($(this).attr('id') == 'captcha1'){
+			$(this).addClass('btn_zc_onmouse2');
+		}else if($(this).attr('src') || $(this).attr('type')=='checkbox' || $(this).attr('type')=='radio'){}
+		else{
+			$(this).addClass('btn_zc_onmouse');}
+        });
+    //表单的输入框失去焦点
+    $("#register_form input").blur(function (){
+    	if($(this).attr('id') == 'captcha1'){
+			$(this).attr('className','btn_zc2');
+		}else if($(this).attr('src') || $(this).attr('type')=='checkbox' || $(this).attr('type')=='radio'){}
+		else{
+		 $(this).attr('className','btn_zc');
+		}
+    });
+});
+function sub_form(){
+	var sub = document.getElementById('register_form');
+	sub.submit();
+	
+}
+</script>
+<div class="width1100 fixed" style="padding:100px 0;">
+<div style="width:978px;">  
+<div style="float:left">            
+<div class="l" style="width:656px;">
+      <div class="box" style="padding:5px 0 40px">
+      <span style="display:block;padding:0 0 10px 80px;color:#229ca0;font-size:19px">注册哇噻网</span><p style="display:block;padding:0 0 15px 80px;">喜欢手工原创设计的快加入我们！一起寻找商品，挖掘特色小店，结识志趣相投的人！</p>
+      <form name="" id="register_form" method="post" action="">
+      	<table width="650"  border="0" align="center" cellpadding="0" cellspacing="0" >
+          <tr>
+            <td valign="top" style="padding:0 0 0 52px"><table width="525px" border="0" cellspacing="0" cellpadding="0" >
+                <!--<tr>-->
+                  <!--<td width="80px" height="45" align="right">电子邮箱:</td>-->
+                  <!--<td width="150px"><input type="text" name="email" id="email" style="margin-left:8px" class="btn_zc"/></td>-->
+                  <!--<td width="210px"  align="left"><label style="margin-left:12px" class="field_notice">请输入一个用于登录的电子邮箱地址</label><label id="checking_email" class="checking">检查中...</label></td>-->
+                <!--</tr>-->
+                <tr>
+                  <td height="45"  align="right">昵称:</td>
+                  <td><input type="text" name="username" id="username" style="margin-left:8px" class="btn_zc"/></td>
+                  <td class="padding3 fontColor4" align="left"><label class="field_notice">用于登录的名字</label><label id="checking_user" class="checking">检查中...</label></td>
+                </tr>
+                <tr>
+                  <td height="45" align="right">设置密码:</td>
+                  <td><input type="password" name="password" id="password" style="margin-left:8px" class="btn_zc"/></td>
+                  <td class="padding3 fontColor4" align="left"><label class="field_notice">您的密码</label></td>
+                </tr>
+                <tr>
+                  <td height="45" align="right">确认密码:</td>
+                  <td><input type="password" name="password_confirm" id="password_confirm" style="margin-left:8px" class="btn_zc"/></td>
+                  <td class="padding3 fontColor4" align="left"><label class="field_notice">重复输入您的密码</label></td>
+                </tr>
+                <!--<tr>-->
+                  <!--<td height="45" align="right">&nbsp;&nbsp;&nbsp;&nbsp;性别:</td>-->
+                  <!--<td height="45">&nbsp;&nbsp;<span style="width:35px;" aline="abs-middle"><input style="margin-top:5px" type="radio" name="gender" value="2" checked/>&nbsp;女</span>&nbsp;<input type="radio" name="gender" value="1"/>&nbsp;男</td>-->
+                  <!--<td class="padding3 fontColor4" align="left"><label class="field_notice"></label></td>-->
+                <!--</tr>-->
+				<!--<tr>
+					 <td colspan="3">
+                                            
+                                           
+					<script type='text/javascript' charset='utf-8' src='js/c4568f0d0d1c42ccae869f08789e9f7d.js'></script>
+					</td>
+				</tr>-->
+				
+                                <!--<tr>-->
+                  <!--<td height="45" align="right">&nbsp;&nbsp;验证码:</td>-->
+                  <!---->
+                        <!--<td width="40%"><input type="text" class="btn_zc2" style="width:110px;margin-bottom:-5px"  name="captcha" class="text" id="captcha1" /><a href="javascript:change_captcha($('#captcha'));" class="renewedly"><img style="margin:0 0 -7px 10px" id="captcha" src="__STATIC__/home/register/picture/index.php" /></a></td>-->
+                        <!---->
+                        <!--<td width="50%" class="padding3 fontColor4" align="left"><label class="field_notice">点击图片更换一张</label></td>-->
+                   <!---->
+                   <!---->
+                <!--</tr>-->
+				                
+                
+              </table></td>
+          </tr>
+          <tr>
+            <td height="2" bgcolor="#FDFDFC"></td>
+          </tr>
+          <tr>
+            <td style="padding:0 0 0;"><table width="360" border="0" cellpadding="0" cellspacing="0" style="margin-left:125px;">
+                <!--<tr>-->
+                <!--<td style="padding:0 0 0 20px" height="45"><input id="clause" type="checkbox" name="agree" value="1" checked/> <label for="clause">我已阅读并同意 <span class="cblue">《<a href="index.php?app=article&amp;act=system&amp;code=eula" target="_blank" class="agreement">哇噻网用户协议</a>》</span></label></td>-->
+                 <!--</tr>-->
+               <!--<tr>
+                  <td height="36"><input type="checkbox" name="checkbox2" id="checkbox2" value="1"/>
+                    订阅哇噻网邮件 精彩创意不错过</td>
+                </tr>-->
+                <tr>
+                  <td><input style="margin-left:20px" type="button" name="Submit" value="" class="login_nbtn" title="立即注册" onclick="sub_form();"/></td>
+                    <!--<button type="submit" class="btn btn-primary">注册</button>-->
+                </tr>
+                <!--<input type="hidden" name="ret_url" value="http%3A%2F%2Fwww.wowsai.com%2Findex.php" />-->
+              </table></td>
+          </tr>
+        </table>
+
+        </form>
+      </div>
+    </div> 
+ </div>  
+<div class="zhanghao" style="float:right;width:293px;background:#f5f6f1" >
+        
+        <div class="dl_kszc" style="padding:-30px 0 0 0;border:none;margin-top:0px">
+        <h3 style="width:292px;font-size:14px;font-weight:normal;border-bottom: 1px solid #FFFFFF;">已有哇噻网账号<br />
+        	<a style="padding-bottom:20px" href="/login.html"><img src="__STATIC__/home/register/picture/login_btn.png" width="137" height="29" /></a>
+        </h3>
+          
+          <!--<script type='text/javascript' charset='utf-8' src='js/8476a988e9594c4db51561571def5bc0.js'></script>-->
+      </div>
+       <div >
+           
+           <div class ="dl_kszc" style="line-height:10px;border:none ;   margin-top: 0">
+                        <span style="padding-bottom:10px;display:block;font-size:14px;font-weight:normal">你也可以用站外账号登录</span><br />
+                        <a href="index.php?app=member&amp;act=register&amp;mod=qq&amp;ret_url=http%3A%2F%2Fwww.wowsai.com%2Findex.php" ><img src="__STATIC__/home/register/picture/denglu_qq.gif"/></a>
+                        <a href="index.php?app=member&amp;act=register&amp;mod=sina&amp;ret_url=http%3A%2F%2Fwww.wowsai.com%2Findex.php"  ><img src="__STATIC__/home/register/picture/denglu_sina.gif"/></a>
+                        <br>
+                        <a href="index.php?app=member&amp;act=register&amp;denglu_id=taobao&amp;ret_url=http%3A%2F%2Fwww.wowsai.com%2Findex.php" ><img src="__STATIC__/home/register/picture/denglu_icon1_16.gif"/></a>
+                        <a href="index.php?app=member&amp;act=register&amp;denglu_id=alipayquick&amp;ret_url=http%3A%2F%2Fwww.wowsai.com%2Findex.php" ><img src="__STATIC__/home/register/picture/denglu_icon1_18.gif"/></a>
+                        <br>
+                        <a href="index.php?app=member&amp;act=register&amp;denglu_id=baidu&amp;ret_url=http%3A%2F%2Fwww.wowsai.com%2Findex.php" ><img src="__STATIC__/home/register/picture/denglu_baidu.gif"/></a>
+                        <a href="index.php?app=member&amp;act=register&amp;denglu_id=douban&amp;ret_url=http%3A%2F%2Fwww.wowsai.com%2Findex.php" ><img src="__STATIC__/home/register/picture/denglu_douban.gif"/></a>
+                        <br>
+                        <a href="index.php?app=member&amp;act=register&amp;denglu_id=kaixin001&amp;ret_url=http%3A%2F%2Fwww.wowsai.com%2Findex.php" ><img src="__STATIC__/home/register/picture/denglu_kaixin.gif"/></a>
+                        <a href="index.php?app=member&amp;act=register&amp;mod=shengda&amp;ret_url=http%3A%2F%2Fwww.wowsai.com%2Findex.php" ><img src="__STATIC__/home/register/picture/denglu_shengda.png" alt="盛大通行证登录"/></a><br/>
+                        <a href="index.php?app=member&amp;act=register&amp;denglu_id=renren&amp;ret_url=http%3A%2F%2Fwww.wowsai.com%2Findex.php" ><img src="__STATIC__/home/register/picture/denglu_renren.gif"/></a>
+                        
+						<!--<br>
+                        <a href="index.php?app=member&amp;act=register&amp;mod=10086&amp;ret_url=http%3A%2F%2Fwww.wowsai.com%2Findex.php" style='float:left;margin-left:49px;'><img src="picture/denglu_10086.png"/></a>-->
+			
+           </div>
+       </div>
+    </div> 
+</div>
+</div>
+</body>
+<script type="text/javascript" src="__STATIC__/home/register/js/snowstorm.js"></script>
+<script>
+  (function(){
+    var startDate = new Date("2014/12/24 16:00:00");
+    var endDate = new Date("2014/12/25 23:59:59");
+    var nowDate = new Date();
+    if(nowDate >= startDate && nowDate <= endDate){
+      snowStorm.start();
+    }
+  })();
+</script>
+<script type="text/javascript">
+if(SITE_URL.indexOf("wowsai.com") > -1){
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24876943-1']);
+  _gaq.push(['_addOrganic', 'baidu', 'word']);
+  _gaq.push(['_addOrganic', 'soso', 'w']);
+  _gaq.push(['_addOrganic', 'youdao', 'q']);
+  _gaq.push(['_addOrganic', 'sogou', 'query']);
+  _gaq.push(['_setDomainName', '.wowsai.com']);
+  _gaq.push(['_setAllowHash', false]);
+  _gaq.push(['_trackPageLoadTime']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+}
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1018095613;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "aVH-CMP2lwIQ_c-75QM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="__STATIC__/home/register/js/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="picture/568d2d2ae5db4babbc9340891bca41d6.gif"/>
+</div>
+</noscript>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F042bfe5d3298a8b8706dfe247c7beb2e' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script src="__STATIC__/home/register/js/wow.js" language="JavaScript"></script>
+<script src="__STATIC__/home/register/js/stat.js" language="JavaScript"></script>
+</html>
+{/block}

@@ -1,0 +1,551 @@
+﻿/*公共的样式*/
+body,html,ul,li,h1,h2,h3,h4,h5,h6,dl,dt,dd,form,div,p,img,table,tr,th,strong{font-family:"Microsoft Yahei",微软雅黑;margin:0;padding:0;}
+a,a:hover{ text-decoration:none;}
+.ms_yahei{ font-family:"Microsoft Yahei",微软雅黑;};
+.left{ float:left;}
+.fontSize{ font-size:14px;}
+.fontSize1{ font-size:18px;}
+.color1{ color:#5c5c5c;}
+.color2{ color:#898989;}
+.ed_clear:after{ clear:both; content:"."; display:block; height:0; line-height:0; font-size:0; overflow:hidden; visibility:hidden;}
+/********个人主页用户动态列表************/
+.contentWarp{ width:980px;}
+.contentWarpLeft{ width:230px; float:left;}
+.userInfo{ background:url(../images/userinfo01.gif) top #f5f5f1 no-repeat; padding-top:15px; zoom:1;}
+.userHeadPic{ width:160px; height:160px; background:#cccccc; margin-left:35px; position:relative;}
+.userHeadPic span{ width:160px; height:24px; float:left; position:absolute; bottom:0px; left:0px; opacity:0.2; filter:alpha(opacity:20); background:black; line-height:24px; text-align:center; color:white; font-size:14px;}
+.userName{ width:204px; margin:10px 0 10px 13px; word-wrap:break-word; font-size:20px; text-align:center;}
+.userIntroduction{ width:204px; margin:0 0 0 13px;}
+.userNumInfo{ width:195px; height:46px; margin:20px 0 0 22px;}
+.userNumInfoOne{ width:64px; float:left; border-right:1px solid #c5c5c5;}
+.userNumInfoOne a,.userNumInfoOne p{ width:64px; text-align:center; float:left;}
+.userNumInfoOne a{ color:#229ca0; font-size:21px; margin-bottom:5px;}
+.userNumInfoOne p{ font-size:14px;}
+
+.userNumInfo22{ width:230px; height:46px;}
+.userNumInfoOne2{ width:114px; float:left; border-right:1px solid #c5c5c5;}
+.userNumInfoOne2 a,.userNumInfoOne2 p{ width:114px; text-align:center; float:left;}
+.userNumInfoOne2 a{ color:#229ca0; font-size:21px; margin-bottom:5px;}
+.userNumInfoOne2 p{ font-size:14px;}
+.userAddGuanzhu,.userAddGuanzhu2{ width:210px; height:44px; margin:10px 0 0 10px;}
+.userAddGuanzhu a{ width:104px; height:44px; float:left; margin-right:1px; text-align:center; color:white; font-size:14px; line-height:44px;}
+.userAddGuanzhu a.addGuanzhu{ background:url(../images/wowsaigif03.png) no-repeat 0 0;}
+.userAddGuanzhu a.addGuanzhu:hover{ background:url(../images/wowsaigif03.png) no-repeat 0 -46px;}
+.userAddGuanzhu a.goStore{ background:url(../images/wowsaigif03.png) no-repeat -105px 0;}
+.userAddGuanzhu a.goStore:hover{ background:url(../images/wowsaigif03.png) no-repeat -105px -46px;}
+
+
+.addGuanzhu2{ width:133px; height:44px; float:left; text-align:center; line-height:44px; color:white; font-size:14px;  background:url(../images/userinfo.gif) no-repeat 0px -138px; margin:0 0 0 38px;}
+.addGuanzhu2:hover{ color:white;}
+
+.userSendMessage{ width:146px; padding:17px 0 20px 84px;}
+.messageBg{ width:20px; height:12px; background:url(../images/userinfo.gif) no-repeat 0 -48px; float:left; margin:4px 5px 0 0;}
+.messageBg:hover{ background-position:0 -60px;}
+.messageSend{ float:left; color:#5c5c5c;}
+
+.peopleIFollow{ background:#f5f5f1; margin:20px 0 0 0; width:210px; padding:0 10px 25px 10px;}
+.peopleIFollow h3{ height:41px; line-height:41px; font-size:14px;}
+.peopleIFollow dl dt{ width:32px; height:32px; float:left; padding-top:3px;}
+.peopleIFollow dl dd{ width:160px; float:left; margin:0 0 0 10px;}
+.peopleIFollow dl dd a{ color:#229ca0;}
+.peopleIFollow dl dd a:hover{ text-decoration:underline;}
+
+.peopleIFollow h3 span{ float:right;}
+.peopleIFollow ul li{ width:32px; height:32px; float:left; margin:0 3px 3px 0;}
+
+.contentWarpRight{ float:right; width:730px;}
+.userDynamicTop{ height:47px; background:url(../images/userinfo.gif) no-repeat 0px -182px; border-bottom:2px solid #1db9be; margin:0 0 20px 0; float:left;}
+.userDynamicTop-left{ float:left; width:100px;}
+.userDynamicTop-left a{ width:33px; height:33px; margin:7px 0 0 17px; float:left;}
+.userDynamicTop-myself{ background:url(../images/ll.png) no-repeat -2px 0;}
+.userDynamicTop-left a.check-status{ background:url(../images/ll.png) no-repeat -36px 0;}
+.userDynamicTop-myself:hover{ background:url(../images/ll.png) no-repeat -36px 0;}
+.userDynamicTop-other{ background:url(../images/ll.png) no-repeat -70px 0;}
+.userDynamicTop-left a.check-status2{ background:url(../images/ll.png) no-repeat -104px 0;}
+.userDynamicTop-other:hover{ background:url(../images/ll.png) no-repeat -104px 0;}
+
+.userDynamicTop-right{ float:left; width:440px; margin:0 0 0 190px; display:inline;}
+.userDynamicTop-right li{ float:left; height:47px; margin:0 30px 0 0; display:inline;}
+.userDynamicTop-right li a{ height:47px; line-height:47px; float:left; font-size:15px; color:#229ca0;}
+.userDynamicTop-right li a:hover span{ color:#229ca0;}
+
+
+.feedList{ background:url(../images/vline.gif) 88px 0px repeat-y; padding-left:120px; float:left; overflow:hidden; position:relative;}
+.feed-mask{ width:20px; height:15px; background:white; position:absolute; top:0; _top:-3px; z-index:60; left:80px;}
+.feedFrame{ width:610px; display:inline-block;}
+.feedFrame li{ width:580px; float:left; border:1px solid #e2e2e2; padding:11px 14px 16px 14px; position:relative; margin-bottom:20px;}
+.avatar-u{ width:66px; height:66px; position:absolute; left:-120px; top:0px;}
+.fdico{ width:31px; height:31px; position:absolute; display:block; left:-47px; top:14px; z-index:3; background:url(../images/ico.png) no-repeat;}
+.fdico-chuchuang{background-position:-1px -1px;}
+.fdico-love{ background-position:-1px -35px;}
+.fdico-message{ background-position:-1px -69px;}
+.fdico-add{ background-position:-1px -103px;}
+.fdico-article{ background-position:-1px -137px;}
+.fdico-friend{ background-position:-1px -171px;}
+.arrow{ width:9px; height:16px; display:block; position:absolute; background:url(../images/userinfo.gif) no-repeat 0px -32px; left:-9px; top:20px;}
+
+.feedbox h3{ font-size:14px;}
+.feedbox h3 a{ color:#229ca0;}
+.feedbox h3 a:hover{ color:#229ca0; text-decoration:underline;}
+.feedGoodList{ margin:14px 0 0 0;}
+.feedGoodList dl{ width:170px; float:left; margin:0 12px 0 0; display:inline;}
+.feedGoodList dl dt{ height:134px;}
+.feedGoodList dl dd span{ float:right; color:#898989;}
+.feedGoodList dl dd a{ color:#898989;}
+
+.articleBox{ height:139px; margin:10px 0 0 0;}
+.articleBox dt{ width:170px; float:left; margin:5px 0 0 0;}
+.articleBox dd{ width:396px; float:left; margin:0 0 0 14px;}
+.articleBox dd a{ color:#5c5c5c; font-size:14px;}
+.articleBox dd p{ color:#898989;}
+
+.feedStoreInfo{ margin:15px 0 0 0;}
+.storeInfoLeft{ width:215px; float:left;}
+.storeInfoLeft2{ width:185px;}
+.storeInfoLeft dl dt{ width:66px; height:66px; float:left;}
+.storeInfoLeft dl dd{ width:130px; float:left; margin:0 0 0 10px;}
+.storeInfoLeft2 dl dd{ width:100px; float:left; margin:0 0 0 10px;}
+.storeInfoLeft dl dd a{ font-size:14px; color:#229ca0;}
+.storeInfoLeft dl dd a.addGuanzhu{ width:89px; height:34px; float:left; line-height:34px; text-align:center; background:url(../images/userinfo.gif) no-repeat 0px -295px; margin-top:12px;}
+.storeInfoLeft dl dd a.addGuanzhu:hover{  background:url(../images/userinfo.gif) no-repeat 0px -329px;}
+
+.storeInforight{ width:365px; float:left;}
+
+.feedTimeMessage{ width:580px; margin:10px 0 0 0; float:left;}
+.feedTimeMessage span{ height:11px; background:url(../images/wowsaigif07_01.gif) 0 3px no-repeat; padding:0 0 0 16px; color:#898989;}
+.feedTimeMessage a{ height:11px; background:url(../images/wowsaigif07_02.gif) 0 4px no-repeat; padding:0 0 0 16px; margin-left:15px; color:#898989;}
+.feedTimeMessage a:hover{ color:#229ca0;} 
+
+.userNumInfo2{ margin:20px 0 0 -17px; float:left;}
+
+.storeInforight{ margin:0px;}
+
+.feedMessageList{ margin:10px 0 0 0;}
+.feedMessageList dl{ width:556px; padding:7px 12px; background:#f5f5f1; float:left; margin:0 0 1px 0;}
+.feedMessageList dl dt{ height:32px; width:32px; float:left;}
+.feedMessageList dl dd{ width:514px; float:left; margin:0 0 0 10px;word-break:break-all;}
+.feedMessageList dl dd a{ line-height:16px; color:#229ca0;}
+
+.feedMessageList p{ height:46px; line-height:46px; background:#f5f5f1; float:left; width:556px; padding:0 12px; margin:0 0 1px 0;}
+.feedMessageList p a{ color:#229ca0;}
+
+.add-message-geren{background:#f5f5f1; padding:10px 10px 12px;}
+.add-message-geren h3{ line-height:18px; font-size:12px; padding:0 0 6px 0;}
+.add-message-geren h3 a{ width:13px; height:13px; float:right; background:url(../images/twolevelpage.png) no-repeat -89px 0; text-indent:-9999px; cursor:pointer;}
+.add-message-geren h3 a:hover{background:url(../images/twolevelpage.png) no-repeat -89px -13px;}
+.message-body2 .message-avatar{ width:32px; float:left; margin:0 10px 0 0; }
+.message-body2 .message-form2{ width:515px; float:left;}
+.message-body2 .message-form2 .message-input2 textarea{ width:507px; height:24px; line-height:24px; border:1px solid #dadad9; resize:none; padding:3px 0 3px 7px; font-size:12px;}
+.message-submit2{ padding-top:6px;}
+.message-submit2 span,.notice_to_seller .notice_num{ float:left; margin:4px 0 0 382px;}
+.message-submit2 span em,.notice_to_seller .notice_num em{ color:#229ca0; font-style:normal;}
+.message-submit2 a{ width:84px; height:27px; text-align:center; font-size:13px; float:right; background:url(../images/twolevelpage.png) no-repeat -1430px 0px; line-height:27px; color:#999898;}
+
+.userCard{ width:293px; position:absolute; top:0; left:0; z-index:9999999;}
+.card-mask{ background:url(../images/33.png) no-repeat; display:inline-block; overflow:hidden; position:absolute; z-index:3;}
+.maskarr-up{ width:16px; height:8px; background-position:0 0; left:30px; top:-4px;}
+.maskarr-down{ width:16px; height:8px; background-position:0 -8px; left:30px; bottom:-4px;}
+
+/*.maskarr-left{ width:16px; height:8px; background-position:0 0; left:30px; top:-4px;}
+.maskarr-right{ width:16px; height:8px; background-position:0 -8px; right:30px; bottom:-4px;}*/
+
+.shadow-card{ width:287px; padding:3px; background:url(../images/cc.png) repeat-y;}
+.body-card{ width:259px; background:white; border:1px solid #a5a5a5; padding:13px;}
+.body-card-top,.body-card-bottom{ display:block; clear:both; overflow:hidden;}
+.avator-card{ width:66px; height:66px; float:left; overflow:hidden;}
+.body-card-userinfo{ width:193px; float:right;}
+.name-card{ font-size:14px; width:183px; margin:0 0 7px 10px;}
+.name-card a{ color:#229ca0;}
+.profile-card a{ color:#229ca0; width:53px; float:left; border-right:1px solid #c5c5c5;}
+.profile-card a em,.profile-card a span{ width:53px; float:left; text-align:center;}
+.profile-card a em{ font-style:normal; font-size:17px;}
+.profile-card a span{ color:#5C5C5C;}
+.body-card-bottom{ margin:12px 0 0 0;}
+.add-guanzhu-card{ width:89px; height:35px; float:left; text-align:center; font-size:15px; line-height:33px; color:white; background:url(../images/wowsai08.png) no-repeat 0 0;}
+.add-guanzhu-card:hover{background:url(../images/wowsai08.png) no-repeat 0 -45px; color:white;}
+.sendMessage-card{ float:left; margin:7px 0 0 17px;}
+
+
+
+/*****个人主页喜欢的橱窗*****/
+.user-chuchuang-list .two-level-page-chuchuang-one{ margin:0 0 20px 20px;}
+
+
+/*****个人主页什么内容都没有添加*****/
+.userStatusList dl{ margin:0 0 85px 0;}
+.userStatusList dl dt{ width:131px; height:131px; margin:0 0 0 293px;}
+.userStatusList dl dt.statusIco-goods{ background:url(../images/wowsaigif08.gif) no-repeat 0 0;}
+.userStatusList dl dt.statusIco-store{ background:url(../images/wowsaigif08.gif) no-repeat 0 -131px;}
+.userStatusList dl dt.statusIco-addChuchuang{ background:url(../images/wowsaigif08.gif) no-repeat 0 -263px;}
+.userStatusList dl dt.statusIco-loveChuchuang{ background:url(../images/wowsaigif08.gif) no-repeat 0 -394px;}
+.userStatusList dl dt.statusIco-people{ background:url(../images/wowsaigif08.gif) no-repeat 0 -525px;}
+.userStatusList dl dd{ text-align:center; font-size:21px; color:#c5c5c5; margin:30px 0 0 0;}
+.userStatusList dl dd a{ color:#229ca0;}
+.userStatusList dl dd a:hover{ text-decoration:underline;}
+.userStatusList dl dd a.aMask{ color:#229ca0; font-size:14px;}
+
+/*****个人主页我关注的人*****/
+.guanzhuPeopleList li{ width:708px; padding:10px; border:1px solid #e6e6e6; margin:0 0 15px 0;}
+.guanzhu-left{ width:347px; float:left;}
+.guanzhu-info{ width:271px; float:left; margin:0 0 0 10px;}
+.guanzhu-info-name{ color:#229ca0; font-size:14px; line-height:14px;}
+.guanzhu-info-name:hover{ color:#229ca0;}
+.guanzhu-info dl dt,.guanzhu-info dl dd{ float:left;}
+.guanzhu-info dl dt{ width:45px; padding:35px 0 0 15px; background:url(../images/wowsaiguanzhu02.gif) 0 40px no-repeat;}
+.guanzhu-info dl dt a{ color:#229ca0;}
+.guanzhu-info dl dd{ width:211px; padding:15px 0 0 0;}
+.guanzhu-info dl dd a{ color:#898989;}
+.guanzhu-right{ width:361px; height:69px; float:left;}
+.favMore-guanzhu{ width:67px; height:67px; background:#f5f5f1; border:1px solid #ececec; float:right;}
+.favMore-guanzhu a{ width:67px; height:57px; float:left; padding:10px 0 0 0;}
+.favMore-guanzhu a em,.favMore-guanzhu a span{ width:67px; float:left; text-align:center; font-style:normal; color:#229ca0; font-size:17px;}
+.favMore-guanzhu a span{ font-size:12px; color:#898989; margin:5px 0 0 0;}
+
+/*****个人主页喜欢的店铺*****/
+.loveStoreList li{ width:718px; padding:5px; border:1px solid #e6e6e6; margin:0 0 15px 0; }
+.loveStoreInfo{ width:195px; float:left;}
+
+.loveStoreInfo h3 a.close-store{ width:15px; height:15px; float:right; background:url(../images/userinfo.gif) no-repeat 0px -17px; text-indent:-99999px; margin:3px 0 0 0;}
+.loveStoreInfo h3 a.store-name{ width:180px; float:left; font-size:15px; overflow:hidden;}
+.storeInfo{ float:left; margin:25px 0 0 0;}
+.storeInfo p{ float:left; width:185px; padding:0 0 0 10px; margin:0 0 5px 0;}
+.storeInfo p.store-level span{ float:left; color:#898989;}
+.storeInfo p.store-level img{ float:left; margin:3px 0 0 0;}
+.numInfo-store{ width:185px; float:left; padding:0 0 0 10px; margin:8px 0 0 0;}
+.numInfo-store span{ font-size:14px; color:#898989;}
+.numInfo-store em{ color:#229ca0; font-style:normal; font-size:21px; margin:0 20px 0 0;}
+
+.loveStoreGoodsList{ width:516px; margin:0 0 0 7px; float:left;}
+.loveStoreGoodsList a{ width:170px; height:134px; float:left; margin:0 0 0 2px;}
+
+
+/****创建橱窗编辑橱窗弹出层****/
+.del-chuchuang{ height:33px; margin:10px 0;}
+.del-chuchuang a{ width:70px; height:33px; float:left; background:url(../images/userinfo.gif) no-repeat 0px -105px; line-height:30px; color:#229ca0; font-size:14px; padding:0 0 0 33px;}
+
+.del-confirm{ display:inline; font-size:14px;}
+a.submitButton{ width:61px; height:33px; display:inline-block; text-align:center; line-height:30px; vertical-align:middle; font-size:14px;}
+a.confirm{ background:url(../images/userinfo.gif) no-repeat 0px -229px; color:white; margin:0 5px 0 10px;}
+a.cancel{ background:url(../images/userinfo.gif) no-repeat left -262px; color:#229ca0;}
+
+
+
+
+
+
+/************个人主页，打开橱窗页面**************/
+
+.chuchuang_cate_list{ font-size:14px;}
+.openChuChuang-info a{ float:right; height:36px; text-align:center; line-height:36px; font-size:14px;}
+.openChuChuang-info a.loveNum-cc{ color:#229ca0; width:60px; background:url(../images/wowsaigif07.gif) no-repeat;}
+.openChuChuang-info a.loveText-cc{ width:105px; background:url(../images/wowsaigif06.gif) no-repeat; color:white; margin:0 5px 0 0;}
+.openChuChuang-info span{ float:left; height:24px; line-height:24px; font-size:20px; margin:6px 0 0 0; padding:0 0 0 8px; border-left:2px solid #229ca0; }
+.openChuChuang-tag{ height:43px; line-height:43px; border-top:1px solid #e5e5e5; margin:15px 0 0 0; color:#898989;}
+.openChuChuang-tag a:hover{ color:#229ca0;}
+
+
+
+
+
+
+.userNumInfoOne p{ font-size:14px;}
+
+.userNumInfo22{ width:230px; height:46px;}
+.userNumInfoOne2{ width:114px; float:left; border-right:1px solid #c5c5c5;}
+.userNumInfoOne2 a,.userNumInfoOne2 p{ width:114px; text-align:center; float:left;}
+.userNumInfoOne2 a{ color:#229ca0; font-size:21px; margin-bottom:5px;}
+.userNumInfoOne2 p{ font-size:14px;}
+.userAddGuanzhu,.userAddGuanzhu2{ width:210px; height:44px; margin:10px 0 0 10px;}
+.userAddGuanzhu a{ width:104px; height:44px; float:left; margin-right:1px; text-align:center; color:white; font-size:14px; line-height:44px;}
+.userAddGuanzhu a.addGuanzhu{ background:url(../images/wowsaigif03.png) no-repeat 0 0;}
+.userAddGuanzhu a.addGuanzhu:hover{ background:url(../images/wowsaigif03.png) no-repeat 0 -46px;}
+.userAddGuanzhu a.goStore{ background:url(../images/wowsaigif03.png) no-repeat -105px 0;}
+.userAddGuanzhu a.goStore:hover{ background:url(../images/wowsaigif03.png) no-repeat -105px -46px;}
+
+
+.addGuanzhu2{ width:133px; height:44px; float:left; text-align:center; line-height:44px; color:white; font-size:14px;  background:url(../images/userinfo.gif) no-repeat 0px -138px; margin:0 0 0 38px;}
+.addGuanzhu2:hover{ color:white;}
+
+.userSendMessage{ width:146px; padding:17px 0 20px 84px;}
+.messageBg{ width:20px; height:12px; background:url(../images/userinfo.gif) no-repeat 0 -48px; float:left; margin:4px 5px 0 0;}
+.messageBg:hover{ background-position:0 -60px;}
+.messageSend{ float:left; color:#5c5c5c;}
+
+.peopleIFollow{ background:#f5f5f1; margin:20px 0 0 0; width:210px; padding:0 10px 25px 10px;}
+.peopleIFollow h3{ height:41px; line-height:41px; font-size:14px;}
+.peopleIFollow dl dt{ width:32px; height:32px; float:left; padding-top:3px;}
+.peopleIFollow dl dd{ width:160px; float:left; margin:0 0 0 10px;}
+.peopleIFollow dl dd a{ color:#229ca0;}
+.peopleIFollow dl dd a:hover{ text-decoration:underline;}
+
+.peopleIFollow h3 span{ float:right;}
+.peopleIFollow ul li{ width:32px; height:32px; float:left; margin:0 3px 3px 0;}
+
+.contentWarpRight{ float:right; width:730px;}
+.userDynamicTop{ height:47px; background:url(../images/userinfo.gif) no-repeat 0px -182px; border-bottom:2px solid #1db9be; margin:0 0 20px 0; float:left;}
+.userDynamicTop-left{ float:left; width:100px;}
+.userDynamicTop-left a{ width:33px; height:33px; margin:7px 0 0 17px; float:left;}
+.userDynamicTop-myself{ background:url(../images/ll.png) no-repeat -2px 0;}
+.userDynamicTop-left a.check-status{ background:url(../images/ll.png) no-repeat -36px 0;}
+.userDynamicTop-myself:hover{ background:url(../images/ll.png) no-repeat -36px 0;}
+.userDynamicTop-other{ background:url(../images/ll.png) no-repeat -70px 0;}
+.userDynamicTop-left a.check-status2{ background:url(../images/ll.png) no-repeat -104px 0;}
+.userDynamicTop-other:hover{ background:url(../images/ll.png) no-repeat -104px 0;}
+
+.userDynamicTop-right{ float:left; width:440px; margin:0 0 0 190px; display:inline;}
+.userDynamicTop-right li{ float:left; height:47px; margin:0 30px 0 0; display:inline;}
+.userDynamicTop-right li a{ height:47px; line-height:47px; float:left; font-size:15px; color:#229ca0;}
+.userDynamicTop-right li a:hover span{ color:#229ca0;}
+
+
+.feedList{ background:url(../images/vline.gif) 88px 0px repeat-y; padding-left:120px; float:left; overflow:hidden; position:relative;}
+.feed-mask{ width:20px; height:15px; background:white; position:absolute; top:0; _top:-3px; z-index:60; left:80px;}
+.feedFrame{ width:610px; display:inline-block;}
+.feedFrame li{ width:580px; float:left; border:1px solid #e2e2e2; padding:11px 14px 16px 14px; position:relative; margin-bottom:20px;}
+.avatar-u{ width:66px; height:66px; position:absolute; left:-120px; top:0px;}
+.fdico{ width:31px; height:31px; position:absolute; display:block; left:-47px; top:14px; z-index:3; background:url(../images/ico.png) no-repeat;}
+.fdico-chuchuang{background-position:-1px -1px;}
+.fdico-love{ background-position:-1px -35px;}
+.fdico-message{ background-position:-1px -69px;}
+.fdico-add{ background-position:-1px -103px;}
+.fdico-article{ background-position:-1px -137px;}
+.fdico-friend{ background-position:-1px -171px;}
+.arrow{ width:9px; height:16px; display:block; position:absolute; background:url(../images/userinfo.gif) no-repeat 0px -32px; left:-9px; top:20px;}
+
+.feedbox h3{ font-size:14px;}
+.feedbox h3 a{ color:#229ca0;}
+.feedbox h3 a:hover{ color:#229ca0; text-decoration:underline;}
+.feedGoodList{ margin:14px 0 0 0;}
+.feedGoodList dl{ width:170px; float:left; margin:0 12px 0 0; display:inline;}
+.feedGoodList dl dt{ height:134px;}
+.feedGoodList dl dd span{ float:right; color:#898989;}
+.feedGoodList dl dd a{ color:#898989;}
+
+.articleBox{ height:139px; margin:10px 0 0 0;}
+.articleBox dt{ width:170px; float:left; margin:5px 0 0 0;}
+.articleBox dd{ width:396px; float:left; margin:0 0 0 14px;}
+.articleBox dd a{ color:#5c5c5c; font-size:14px;}
+.articleBox dd p{ color:#898989;}
+
+.feedStoreInfo{ margin:15px 0 0 0;}
+.storeInfoLeft{ width:215px; float:left;}
+.storeInfoLeft2{ width:185px;}
+.storeInfoLeft dl dt{ width:66px; height:66px; float:left;}
+.storeInfoLeft dl dd{ width:130px; float:left; margin:0 0 0 10px;}
+.storeInfoLeft2 dl dd{ width:100px; float:left; margin:0 0 0 10px;}
+.storeInfoLeft dl dd a{ font-size:14px; color:#229ca0;}
+.storeInfoLeft dl dd a.addGuanzhu{ width:89px; height:34px; float:left; line-height:34px; text-align:center; background:url(../images/userinfo.gif) no-repeat 0px -295px; margin-top:12px;}
+.storeInfoLeft dl dd a.addGuanzhu:hover{  background:url(../images/userinfo.gif) no-repeat 0px -329px;}
+
+.storeInforight{ width:365px; float:left;}
+
+.feedTimeMessage{ width:580px; margin:10px 0 0 0; float:left;}
+.feedTimeMessage span{ height:11px; background:url(../images/wowsaigif07_01.gif) 0 3px no-repeat; padding:0 0 0 16px; color:#898989;}
+.feedTimeMessage a{ height:11px; background:url(../images/wowsaigif07_02.gif) 0 4px no-repeat; padding:0 0 0 16px; margin-left:15px; color:#898989;}
+.feedTimeMessage a:hover{ color:#229ca0;} 
+
+.userNumInfo2{ margin:20px 0 0 -17px; float:left;}
+
+.storeInforight{ margin:0px;}
+
+.feedMessageList{ margin:10px 0 0 0;}
+.feedMessageList dl{ width:556px; padding:7px 12px; background:#f5f5f1; float:left; margin:0 0 1px 0;}
+.feedMessageList dl dt{ height:32px; width:32px; float:left;}
+.feedMessageList dl dd{ width:514px; float:left; margin:0 0 0 10px;word-break:break-all;}
+.feedMessageList dl dd a{ line-height:16px; color:#229ca0;}
+
+.feedMessageList p{ height:46px; line-height:46px; background:#f5f5f1; float:left; width:556px; padding:0 12px; margin:0 0 1px 0;}
+.feedMessageList p a{ color:#229ca0;}
+
+.add-message-geren{background:#f5f5f1; padding:10px 10px 12px;}
+.add-message-geren h3{ line-height:18px; font-size:12px; padding:0 0 6px 0;}
+.add-message-geren h3 a{ width:13px; height:13px; float:right; background:url(../images/twolevelpage.png) no-repeat -89px 0; text-indent:-9999px; cursor:pointer;}
+.add-message-geren h3 a:hover{background:url(../images/twolevelpage.png) no-repeat -89px -13px;}
+.message-body2 .message-avatar{ width:32px; float:left; margin:0 10px 0 0; }
+.message-body2 .message-form2{ width:515px; float:left;}
+.message-body2 .message-form2 .message-input2 textarea{ width:507px; height:24px; line-height:24px; border:1px solid #dadad9; resize:none; padding:3px 0 3px 7px; font-size:12px;}
+.message-submit2{ padding-top:6px;}
+.message-submit2 span,.notice_to_seller .notice_num{ float:left; margin:4px 0 0 382px;}
+.message-submit2 span em,.notice_to_seller .notice_num em,.ws_buttonside span em{ color:#229ca0; font-style:normal;}
+.message-submit2 a{ width:84px; height:27px; text-align:center; font-size:13px; float:right; background:url(../images/twolevelpage.png) no-repeat -1430px 0px; line-height:27px; color:#999898;}
+
+.userCard{ width:293px; position:absolute; top:0; left:0; z-index:9999999;}
+.card-mask{ background:url(../images/33.png) no-repeat; display:inline-block; overflow:hidden; position:absolute; z-index:3;}
+.maskarr-up{ width:16px; height:8px; background-position:0 0; left:30px; top:-4px;}
+.maskarr-down{ width:16px; height:8px; background-position:0 -8px; left:30px; bottom:-4px;}
+
+/*.maskarr-left{ width:16px; height:8px; background-position:0 0; left:30px; top:-4px;}
+.maskarr-right{ width:16px; height:8px; background-position:0 -8px; right:30px; bottom:-4px;}*/
+
+.shadow-card{ width:287px; padding:3px; background:url(../images/cc.png) repeat-y;}
+.body-card{ width:259px; background:white; border:1px solid #a5a5a5; padding:13px;}
+.body-card-top,.body-card-bottom{ display:block; clear:both; overflow:hidden;}
+.avator-card{ width:66px; height:66px; float:left; overflow:hidden;}
+.body-card-userinfo{ width:193px; float:right;}
+.name-card{ font-size:14px; width:183px; margin:0 0 7px 10px;}
+.name-card a{ color:#229ca0;}
+.profile-card a{ color:#229ca0; width:53px; float:left; border-right:1px solid #c5c5c5;}
+.profile-card a em,.profile-card a span{ width:53px; float:left; text-align:center;}
+.profile-card a em{ font-style:normal; font-size:17px;}
+.profile-card a span{ color:#5C5C5C;}
+.body-card-bottom{ margin:12px 0 0 0;}
+.add-guanzhu-card{ width:89px; height:35px; float:left; text-align:center; font-size:15px; line-height:33px; color:white; background:url(../images/wowsai08.png) no-repeat 0 0;}
+.add-guanzhu-card:hover{background:url(../images/wowsai08.png) no-repeat 0 -45px; color:white;}
+.sendMessage-card{ float:left; margin:7px 0 0 17px;}
+
+
+
+/*****个人主页喜欢的橱窗*****/
+.user-chuchuang-list .two-level-page-chuchuang-one{ margin:0 0 20px 20px;}
+
+
+/*****个人主页什么内容都没有添加*****/
+.userStatusList dl{ margin:0 0 85px 0;}
+.userStatusList dl dt{ width:131px; height:131px; margin:0 0 0 293px;}
+.userStatusList dl dt.statusIco-goods{ background:url(../images/wowsaigif08.gif) no-repeat 0 0;}
+.userStatusList dl dt.statusIco-store{ background:url(../images/wowsaigif08.gif) no-repeat 0 -131px;}
+.userStatusList dl dt.statusIco-addChuchuang{ background:url(../images/wowsaigif08.gif) no-repeat 0 -263px;}
+.userStatusList dl dt.statusIco-loveChuchuang{ background:url(../images/wowsaigif08.gif) no-repeat 0 -394px;}
+.userStatusList dl dt.statusIco-people{ background:url(../images/wowsaigif08.gif) no-repeat 0 -525px;}
+.userStatusList dl dd{ text-align:center; font-size:21px; color:#c5c5c5; margin:30px 0 0 0;}
+.userStatusList dl dd a{ color:#229ca0;}
+.userStatusList dl dd a:hover{ text-decoration:underline;}
+.userStatusList dl dd a.aMask{ color:#229ca0; font-size:14px;}
+
+/*****个人主页我关注的人*****/
+.guanzhuPeopleList li{ width:708px; padding:10px; border:1px solid #e6e6e6; margin:0 0 15px 0;}
+.guanzhu-left{ width:347px; float:left;}
+.guanzhu-info{ width:271px; float:left; margin:0 0 0 10px;}
+.guanzhu-info-name{ color:#229ca0; font-size:14px; line-height:14px;}
+.guanzhu-info-name:hover{ color:#229ca0;}
+.guanzhu-info dl dt,.guanzhu-info dl dd{ float:left;}
+.guanzhu-info dl dt{ width:45px; padding:35px 0 0 15px; background:url(../images/wowsaiguanzhu02.gif) 0 40px no-repeat;}
+.guanzhu-info dl dt a{ color:#229ca0;}
+.guanzhu-info dl dd{ width:211px; padding:15px 0 0 0;}
+.guanzhu-info dl dd a{ color:#898989;}
+.guanzhu-right{ width:361px; height:69px; float:left;}
+.favMore-guanzhu{ width:67px; height:67px; background:#f5f5f1; border:1px solid #ececec; float:right;}
+.favMore-guanzhu a{ width:67px; height:57px; float:left; padding:10px 0 0 0;}
+.favMore-guanzhu a em,.favMore-guanzhu a span{ width:67px; float:left; text-align:center; font-style:normal; color:#229ca0; font-size:17px;}
+.favMore-guanzhu a span{ font-size:12px; color:#898989; margin:5px 0 0 0;}
+
+/*****个人主页喜欢的店铺*****/
+.loveStoreList li{ width:718px; padding:5px; border:1px solid #e6e6e6; margin:0 0 15px 0; }
+.loveStoreInfo{ width:195px; float:left;}
+
+.loveStoreInfo h3 a.close-store{ width:15px; height:15px; float:right; background:url(../images/userinfo.gif) no-repeat 0px -17px; text-indent:-99999px; margin:3px 0 0 0;}
+.loveStoreInfo h3 a.store-name{ width:180px; float:left; font-size:15px; overflow:hidden;}
+.storeInfo{ float:left; margin:25px 0 0 0;}
+.storeInfo p{ float:left; width:185px; padding:0 0 0 10px; margin:0 0 5px 0;}
+.storeInfo p.store-level span{ float:left; color:#898989;}
+.storeInfo p.store-level img{ float:left; margin:3px 0 0 0;}
+.numInfo-store{ width:185px; float:left; padding:0 0 0 10px; margin:8px 0 0 0;}
+.numInfo-store span{ font-size:14px; color:#898989;}
+.numInfo-store em{ color:#229ca0; font-style:normal; font-size:21px; margin:0 20px 0 0;}
+
+.loveStoreGoodsList{ width:516px; margin:0 0 0 7px; float:left;}
+.loveStoreGoodsList a{ width:170px; height:134px; float:left; margin:0 0 0 2px;}
+
+
+/****创建橱窗编辑橱窗弹出层****/
+.del-chuchuang{ height:33px; margin:10px 0;}
+.del-chuchuang a{ width:70px; height:33px; float:left; background:url(../images/userinfo.gif) no-repeat 0px -105px; line-height:30px; color:#229ca0; font-size:14px; padding:0 0 0 33px;}
+
+.del-confirm{ display:inline; font-size:14px;}
+a.submitButton{ width:61px; height:33px; display:inline-block; text-align:center; line-height:30px; vertical-align:middle; font-size:14px;}
+a.confirm{ background:url(../images/userinfo.gif) no-repeat 0px -229px; color:white; margin:0 5px 0 10px;}
+a.cancel{ background:url(../images/userinfo.gif) no-repeat left -262px; color:#229ca0;}
+
+
+
+
+
+
+/************个人主页，打开橱窗页面**************/
+
+.chuchuang_cate_list{ font-size:14px;}
+.openChuChuang-info a{ float:right; height:36px; text-align:center; line-height:36px; font-size:14px;}
+.openChuChuang-info a.loveNum-cc{ color:#229ca0; width:60px; background:url(../images/wowsaigif07.gif) no-repeat;}
+.openChuChuang-info a.loveText-cc{ width:105px; background:url(../images/wowsaigif06.gif) no-repeat; color:white; margin:0 5px 0 0;}
+.openChuChuang-info span{ float:left; height:24px; line-height:24px; font-size:20px; margin:6px 0 0 0; padding:0 0 0 8px; border-left:2px solid #229ca0; }
+.openChuChuang-tag{ height:43px; line-height:43px; border-top:1px solid #e5e5e5; margin:15px 0 0 0; color:#898989;}
+.openChuChuang-tag a:hover{ color:#229ca0;}
+
+
+
+
+/********个人主页，消息页面【我的评论页面】**********/
+.ws_message_nav{ width:230px; height:195px; margin:20px 0 0 0; background:url(../images/ws_message_nav1.gif) no-repeat; background-position:0 0;}
+.ws_message_nav li{ height:49px; line-height:48px; font-size:15px; width:130px; padding:0 0 0 100px; cursor:pointer;}
+.ws_message_nav li.current{ color:#229ca0;}
+
+.ws_message_body{ padding:0 21px 0 11px;}
+.ws_message_count{ padding:0 0 7px 0; border-bottom:1px solid #d6d6d6; font-size:14px;}
+
+
+.ws_message_list li{ border-bottom:1px solid #d6d6d6; margin:20px 0 0 0; padding:0 0 16px 0;}
+.ws_message_avatar{ width:32px; height:32px; float:left; border:1px solid #d6d6d6; margin:0 10px 0 0;}
+.ws_message_profile{ width:653px; float:left; margin:-2px 0 0 0;}
+.ws_message_content,.ws_message_info{ line-height:15px; font-size:14px;}
+.ws_message_content a,.message_info_right a,.message_info_left a,.ws_about_me_left a,.ws_message_count a,.conversations a{ color:#229ca0;}
+.comment_message{ width:510px; float:left; line-height:18px; color:#2f2e2e;}
+.date_message{ float:right; margin-right:15px;}
+.ws_message_info{ margin:5px 0 0 0;}
+.message_info_right{ float:right; margin-right:15px;}
+.message_info_left{ float:left; width:530px;}
+.message_delete{ margin:0 10px 0 0;}
+
+.ws_message_replay{ width:616px; height:132px; border:1px solid #d6d6d6; margin:25px 0 0 0; padding:15px; position:relative;}
+.ws_message_textarea{ width:572px; float:left;}
+.ws_message_textarea textarea{ width:565px; height:71px; resize:none; border:1px solid #229ca0; font-size:14px; padding:5px 0 0 5px;}
+.ws_buttonside{ margin:15px 0 0 0;}
+.ws_buttonside span{ float:right;}
+.ws_message_arrow{ width:16px; height:8px; background:url(../images/33.png) no-repeat; position:absolute; right:15px; top:-8px;}
+
+.ws_buttonside a{ width:84px; height:27px; text-align:center; font-size:13px; float:left; background:url(../images/twolevelpage.png) no-repeat -1430px 0px; line-height:27px; color:#999898;}
+
+.replay_success{ width:453px; height:42px; background:url(../images/replay.gif) no-repeat;}
+.replay_success *{ float:right; margin:0 10px 0 0; height:40px;}
+.replay_success span{ line-height:40px; color:#ffffff;}
+.replay_success a{ width:20px;}
+.delete_success{ width:453px; height:42px; background:url(../images/delete.gif) no-repeat;}
+.delete_success *{ float:right; margin:0 10px 0 0; height:40px;}
+.delete_success span{ line-height:40px; color:#ffffff;}
+.delete_success a{ width:20px;}
+
+
+
+/********个人主页，消息页面【@我的页面】**********/
+.ws_about_me{ width:622px; float:left; border:1px solid #d6d6d6; background:#f9f9f9; margin:0 0 0 4px; padding:13px; position:relative;}
+.ws_about_me_left{ width:520px; float:left; font-size:14px;}
+.ws_about_me_left p{ color:#2f2e2e;}
+.ws_about_me_date{ margin:15px 0 0 0;}
+.ws_about_me_right{ width:70px; float:right;}
+
+.ws_about_me .arrow{ width:8px; height:16px; background:url(../images/arrow.png) no-repeat; position:absolute; left:-8px; top:8px;}
+.ws_message_list li.ws_about_me_li{ border-bottom:none; padding:0;}
+
+/********个人主页，消息页面【系统消息页面】**********/
+.ws_message_count ul{ width:80px; float:right; margin:0 15px 0 0;}
+.ws_message_count ul li{ float:left;}
+.private_message{ width:470px;}
+
+
+/********个人主页，消息页面【发送私信页面】**********/
+.ws_private_message_delete{ width:71px; height:27px; float:right; background:url(../images/ws_message_but01.gif) no-repeat; line-height:27px; text-align:center;}
+.ws_private_message_back{ float:left; margin:10px 0 0 0;}
+.ws_private_message_back:hover{ text-decoration:underline;}
+.ws_private_message_replay{ border:none; margin:10px 0 0 15px;}
+.ws_private_message_list{ border-top:1px solid #d6d6d6;}
+.ws_private_message_item{ padding:20px 30px 0;}
+.u_head { width:32px; height:32px; border:1px solid #d6d6d6; }
+.head_my{float:left; margin-right:15px;}
+.conversations{ width:514px; border:1px solid #d6d6d6; background:#f9f9f9; display:inline-block; padding:13px; position:relative;}
+.private_message_con{ font-size:14px; color:#2f2e2e;}
+.private_message_about{ margin-top:5px;}
+.private_message_about a{ float:right; font-size:14px;}
+.ta{ float:right;}
+.head_ta{float:right; margin-left:15px;}
+.conversations .pointer{ width:8px; height:16px; background:url(../images/arrow.png) no-repeat 0 0; position:absolute; top:6px;}
+.my .pointer{ left:-8px;}
+.ta .pointer{ background-position:-8px 0; right:-8px;}

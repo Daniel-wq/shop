@@ -1,0 +1,45 @@
+﻿{extend name='base'/}
+{block name='content'}
+<div id="section">
+	<div class="shangouTop widthall">
+    	<div class="width1100 center">
+        	<div class="shijiTitleLabel">
+                    <h1>{$title}</h1>
+            </div>
+            <div class="goodsCon fixed">
+				<!--<ul class="goodsNav fixed">-->
+                	<!--<li class="fl"><a href="/shopping/xinpin" class="size14 on">全部分类</a></li>-->
+                    <!--<li class="fl"><a href="/shopping/xinpin/1.html" class="size14 ">服饰</a></li>-->
+                    <!--<li class="fl"><a href="/shopping/xinpin/145.html" class="size14 ">饰品</a></li>-->
+                    <!--<li class="fl"><a href="/shopping/xinpin/176.html" class="size14 ">鞋包</a></li>-->
+                    <!--<li class="fl"><a href="/shopping/xinpin/18.html" class="size14 ">家居</a></li>-->
+                    <!--<li class="fl"><a href="/shopping/xinpin/266.html" class="size14 ">数码</a></li>-->
+                    <!--<li class="fl"><a href="/shopping/xinpin/243.html" class="size14 ">文具</a></li>-->
+                    <!--<li class="fl"><a href="/shopping/xinpin/230.html" class="size14 ">玩偶</a></li>-->
+                    <!--<li class="fl"><a href="/shopping/xinpin/884.html" class="size14 ">定制</a></li>-->
+                    <!--<li class="fl"><a href="/shopping/xinpin/4.html" class="size14 ">艺术</a></li>-->
+                    <!--<li class="fl"><a href="/shopping/xinpin/61.html" class="size14 ">民艺</a></li>-->
+                    <!--<li class="fl last"><a href="/shopping/xinpin/280.html" class="size14 ">植物食品</a></li>-->
+                <!--</ul>-->
+                
+                <div class="width1100 shijiGoodsList fixed" style="text-align:left;width: 1150px">
+                    <?php foreach ($goodsData as $v): ?>
+                	   <div class="shijiGoodsItem  fl">
+                           <a href="/content/{$v['id']}.html" target="_blank"><img src="{$v['thumb']}" style="width: 242px;height: 242px"/></a>
+                                <h3><a href="/content/{$v['id']}.html" class="color999" target="_blank">{$v['content']}</a></h3>
+                            <input type='hidden' class='goodsid' value='197393'>
+                            <div class="shijiGoodsWarp">
+                                <div class="overlay"></div>
+                                <div class="goodsPrice ju size14 center">￥{$v['price']}</div>
+                            </div>
+                       </div>
+                    <?php endforeach; ?>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>
+{/block}

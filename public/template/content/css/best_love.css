@@ -1,0 +1,28 @@
+﻿@charset utf-8;
+body,html,ul,li,h1,h2,h3,h4,h5,h6,dl,dt,dd,form,div,p,img,table,tr,th,strong{font-family:宋体;font-size:12px;margin:0;padding:0;}
+ul,dl{list-style-type:none;}
+h1,h2,h3,h4,h5,h6{font-size:12px;font-weight:400;}
+img{border:0;}
+input{font-size:12px;line-height:18px;color:#8A8A8A;}
+*{margin:0;padding:0;}
+.clear{clear:both;font-size:0;line-height:0;height:0;}
+.join_fav{width:404px;height:300px;background:#e7f2ff;}
+.join_info_f{width:339px;height:50px;padding-top:18px;margin-left:9px;padding-left:45px;background:url(../images/duigou1.png) 6px 14px no-repeat;}
+.join_info_f li{height:25px;line-height:25px;}
+.pay_button{margin-top:5px;width:337px;padding-left:2px;}
+.join_fav_message{color:#5b5b5b;font-weight:700;font-size:16px;}
+.join_fav_count{width:335px;font-size:12px;color:#8a8a8a;padding-left:4px;}
+.join_fav_count a{color:#229ca0;text-decoration:none;margin-left:5px;}
+.maybe_favorite_f{background:url(../images/solid1.jpg) no-repeat left top;margin-top:5px;float:left;}
+.maybe_favorite_f .like{height:46px;line-height:46px;width:332px;padding-left:20px;color:#8a8a8a;float:left;}
+.scroll_but{width:50px;float:left;height:31px;padding-top:15px;}
+.maybe_favorite_f dl{width:83px;float:left;margin-left:13px;display:inline;_margin-left:12px;}
+.maybe_favorite_f dl dt{width:79px;height:79px;border:1px solid #ededed;background:#FFF;padding:3px 0 0 3px;}
+.good_name_f{padding-top:5px;width:76px;padding-left:3px;}
+.good_name_f a{color:#8A8A8A;text-decoration:none;}
+.good_price_f{color:#FD834C;font-weight:700;padding-top:5px;}
+.fav_more{width:auto;padding-left:250px;height:40px;line-height:40px;}
+.fav_more a{color:#229ca0;text-decoration:none;}
+#scroll_box{width:395px;height:auto;float:left;overflow:hidden;padding-left:7px;}
+#close a{position:absolute;background:url(../images/delete3.gif) 0 -14px no-repeat;width:13px;height:14px;right:3px;top:3px;}
+#close a:hover{position:absolute;background:url(../images/delete3.gif) 0 0 no-repeat;width:13px;height:14px;right:3px;top:3px;}

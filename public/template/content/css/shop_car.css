@@ -1,0 +1,22 @@
+﻿@charset utf-8;
+body,html,ul,li,h1,h2,h3,h4,h5,h6,dl,dt,dd,form,div,p,img,table,tr,th,strong{font-family:宋体;font-size:12px;margin:0;padding:0;}
+ul,dl{list-style-type:none;}
+h1,h2,h3,h4,h5,h6{font-size:12px;font-weight:400;}
+img{border:0;}
+input{font-size:12px;line-height:18px;color:#8A8A8A;}
+*{margin:0;padding:0;}
+.clear{clear:both;font-size:0;line-height:0;height:0;}
+.join_car{width:404px;height:320px;background:#f8fff3;}
+.join_info{width:339px;height:83px;padding-top:18px;margin-left:9px;padding-left:45px;background:url(../images/duigou.png) 6px 14px no-repeat;}
+.join_info li{height:25px;line-height:25px;}
+.pay_button{margin-top:5px;width:337px;padding-left:2px;}
+.join_car_message{color:#5b5b5b;font-weight:700;font-size:16px;}
+.join_car_count{width:335px;font-size:14px;color:#8a8a8a;padding-left:4px;}
+.join_car_count span{color:#fd834c;font-weight:700;font-size:16px;}
+.maybe_favorite{background:url(../images/solid.jpg) no-repeat left top;margin-top:5px;}
+.maybe_favorite .like{height:46px;line-height:46px;width:382px;padding-left:20px;color:#8a8a8a;}
+.maybe_favorite dl{width:83px;float:left;margin-left:13px;display:inline;}
+.maybe_favorite dl dt{width:79px;height:79px;border:1px solid #ededed;background:#FFF;padding:3px 0 0 3px;}
+.good_name{padding-top:5px;}
+.good_name a{color:#8A8A8A;text-decoration:none;}
+.good_price{color:#FD834C;font-weight:700;padding-top:5px;}

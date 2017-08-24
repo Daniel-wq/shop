@@ -1,0 +1,144 @@
+﻿/*公共的样式*/
+a,a:hover{ text-decoration:none;}
+.ms_yahei{ font-family:"Microsoft Yahei",微软雅黑;};
+.left{ float:left;}
+.fontSize{ font-size:14px;}
+.fontSize1{ font-size:18px;}
+.color1{ color:#5c5c5c;}
+.color2{ color:#898989;}
+
+/**登录弹出框登录**/
+
+.logoTip{ width:511px; background:white; z-index:99999; position:absolute; display:block; padding:0 0 22px 0;}
+.logoTip-top{ height:49px;}
+.logoTip-top-close{ width:51px; float:right;}
+.logoTip-top-close a{ width:51px; height:49px; float:right; background:url(../images/twolevelpage.png) no-repeat -1379px 0px; text-indent:-9999px;}
+.logoTip-top-close a:hover{ width:51px; height:49px; float:right; background:url(../images/twolevelpage.png) no-repeat -1328px 0px; text-indent:-9999px;}
+.logoTip-top-text{ width:440px; height:49px; float:left; background:url(../images/top_line.gif) repeat-x; font-size:20px; line-height:49px; padding:0 0 0 20px; color:#5c5c5c;}
+
+.logoTip1{ width:511px; background:white; z-index:99999; position:absolute; display:block; padding:0 0 22px 0;}
+.logoTip1-top{ height:49px;}
+.logoTip1-top-close{ width:51px; float:right;}
+.logoTip1-top-close a{ width:51px; height:49px; float:right; background:url(../images/twolevelpage.png) no-repeat -1379px 0px; text-indent:-9999px;}
+.logoTip1-top-close a:hover{ width:51px; height:49px; float:right; background:url(../images/twolevelpage.png) no-repeat -1328px 0px; text-indent:-9999px;}
+.logoTip1-top-text{ width:440px; height:49px; float:left; background:url(../images/top_line.gif) repeat-x; font-size:20px; line-height:49px; padding:0 0 0 20px; color:#5c5c5c;}
+
+.logoTips{ width:511px; background:white; z-index:99999; position:absolute; display:block; padding:0 0 22px 0;}
+.logoTips-top{ height:49px;}
+.logoTips-top-close{ width:51px; float:right;}
+.logoTips-top-close a{ width:51px; height:49px; float:right; background:url(../images/twolevelpage.png) no-repeat -1379px 0px; text-indent:-9999px;}
+.logoTips-top-close a:hover{ width:51px; height:49px; float:right; background:url(../images/twolevelpage.png) no-repeat -1328px 0px; text-indent:-9999px;}
+.logoTips-top-text{ width:440px; height:49px; float:left; background:url(../images/top_line.gif) repeat-x; font-size:20px; line-height:49px; padding:0 0 0 20px; color:#5c5c5c;}
+
+.logoTipss{ width:511px; background:white; z-index:99999; position:absolute; display:block; padding:0 0 22px 0;}
+.logoTipss-top{ height:49px;}
+.logoTipss-top-close{ width:51px; float:right;}
+.logoTipss-top-close a{ width:51px; height:49px; float:right; background:url(../images/twolevelpage.png) no-repeat -1379px 0px; text-indent:-9999px;}
+.logoTipss-top-close a:hover{ width:51px; height:49px; float:right; background:url(../images/twolevelpage.png) no-repeat -1328px 0px; text-indent:-9999px;}
+.logoTipss-top-text{ width:440px; height:49px; float:left; background:url(../images/top_line.gif) repeat-x; font-size:20px; line-height:49px; padding:0 0 0 20px; color:#5c5c5c;}
+
+
+.logoTip-input{ padding:5px 0 0 46px; width:465px;}
+.logoTip-input p{ width:298px; height:35px; margin-top:16px;}
+.logoTip-input p label{ width:43px; height:35px; line-height:35px; float:left; text-align:left;  font-size:14px;}
+.logoTip-input p input{ width:248px; height:33px; border:1px solid #9f9f9f; float:left; font-size:14px; _line-height:33px; padding:0 0 0 5px;}
+
+.logoTip1-input{ padding:5px 0 0 46px; width:465px;}
+.logoTip1-input p{ width:298px; height:35px; margin-top:16px;}
+.logoTip1-input p label{ width:43px; height:35px; line-height:35px; float:left; text-align:left;  font-size:14px;}
+.logoTip1-input p input{ width:248px; height:33px; border:1px solid #9f9f9f; float:left; font-size:14px; _line-height:33px; padding:0 0 0 5px;}
+
+.logoTips-input{ padding:5px 0 0 46px; width:465px;}
+.logoTips-input p{ width:298px; height:35px; margin-top:16px;}
+.logoTips-input p label{ width:43px; height:35px; line-height:35px; float:left; text-align:left;  font-size:14px;}
+.logoTips-input p input{ width:248px; height:33px; border:1px solid #9f9f9f; float:left; font-size:14px; _line-height:33px; padding:0 0 0 5px;}
+
+.logoTipss-input{ padding:5px 0 0 46px; width:465px;}
+.logoTipss-input p{ width:298px; height:35px; margin-top:16px;}
+.logoTipss-input p label{ width:43px; height:35px; line-height:35px; float:left; text-align:left;  font-size:14px;}
+.logoTipss-input p input{ width:248px; height:33px; border:1px solid #9f9f9f; float:left; font-size:14px; _line-height:33px; padding:0 0 0 5px;}
+
+
+.rember-user{ margin:10px 0 0 43px; float:left; display:inline;}
+.rember-user input{ width:13px; height:13px; float:left; margin:3px 10px 0 0;}
+
+.logoTip-button{ width:204px; height:35px; float:left; margin:10px 0 0 43px; display:inline;}
+.logoTip-button dt,.logoTip-button dd{ text-align:center; line-height:35px;}
+.logoTip-button dt a,.logoTip-sendButton a,.logoTip-makeSure a{ width:102px; height:35px; float:left; color:white; font-size:15px; background:url(../images/logobutbg.gif) no-repeat; text-align:center; line-height:35px;}
+.logoTip-button dt a:hover{ color:white;}
+.logoTip-button dd a{ color:#229ca0;}
+.logoTip-button dd a:hover,.logoTip-dash a:hover{ text-decoration:underline; color:#229ca0;}
+
+.logoTip1-button{ width:204px; height:35px; float:left; margin:10px 0 0 43px; display:inline;}
+.logoTip1-button dt,.logoTip1-button dd{ text-align:center; line-height:35px;}
+.logoTip1-button dt a,.logoTip1-sendButton a,.logoTip1-makeSure a{ width:102px; height:35px; float:left; color:white; font-size:15px; background:url(../images/logobutbg.gif) no-repeat; text-align:center; line-height:35px;}
+.logoTip1-button dt a:hover{ color:white;}
+.logoTip1-button dd a{ color:#229ca0;}
+.logoTip1-button dd a:hover,.logoTip1-dash a:hover{ text-decoration:underline; color:#229ca0;}
+
+.logoTips-button{ width:204px; height:35px; float:left; margin:10px 0 0 43px; display:inline;}
+.logoTips-button dt,.logoTips-button dd{ text-align:center; line-height:35px;}
+.logoTips-button dt a,.logoTips-sendButton a,.logoTips-makeSure a{ width:102px; height:35px; float:left; color:white; font-size:15px; background:url(../images/logobutbg.gif) no-repeat; text-align:center; line-height:35px;}
+.logoTips-button dt a:hover{ color:white;}
+.logoTips-button dd a{ color:#229ca0;}
+.logoTips-button dd a:hover,.logoTips-dash a:hover{ text-decoration:underline; color:#229ca0;}
+
+.logoTipss-button{ width:204px; height:35px; float:left; margin:10px 0 0 43px; display:inline;}
+.logoTipss-button dt,.logoTipss-button dd{ text-align:center; line-height:35px;}
+.logoTipss-button dt a,.logoTipss-sendButton a,.logoTipss-makeSure a{ width:102px; height:35px; float:left; color:white; font-size:15px; background:url(../images/logobutbg.gif) no-repeat; text-align:center; line-height:35px;}
+.logoTipss-button dt a:hover{ color:white;}
+.logoTipss-button dd a{ color:#229ca0;}
+.logoTipss-button dd a:hover,.logoTipss-dash a:hover{ text-decoration:underline; color:#229ca0;}
+
+
+.logoTip-dash{ height:41px; background:url(../images/dashline.gif) no-repeat; line-height:41px; text-align:center; font-size:14px; margin:10px 0;}
+.logoTip-dash a{ color:#229ca0; margin:0 5px;}
+
+.logoTip-ludeng{ margin:0 0 0 28px; display:inline;}
+.logoTip-ludeng a{ width:91px; height:35px; float:left; margin:0 0 10px 18px; display:inline;}
+
+
+
+.logoTip-addressee{ width:484px; padding:30px 0 0 27px;}
+.logoTip-messageBody{ width:484px; height:152px; padding:0 0 0 27px; margin:22px 0 0 0;}
+.logoTip-messageBody dt{ width:56px; float:left; line-height:10px;}
+.logoTip-messageBody dd{ width:368px; height:150px; border:1px solid #9c9c9c; float:left;}
+.logoTip-messageBody dd textarea{ width:363px; height:145px; border:none; resize:none; padding:5px 0 0 5px;}
+.logoTip-sendButton{ width:429px; height:35px; padding:0 0 0 82px; margin:15px 0 0 0;}
+.logoTip-sendButton span{ width:270px; float:left; height:35px; text-align:right; line-height:45px;}
+.logoTip-sendButton span em{ font-style:normal; color:#229ca0;}
+
+.logoTip1-addressee{ width:484px; padding:30px 0 0 27px;}
+.logoTip1-messageBody{ width:484px; height:152px; padding:0 0 0 27px; margin:22px 0 0 0;}
+.logoTip1-messageBody dt{ width:56px; float:left; line-height:10px;}
+.logoTip1-messageBody dd{ width:368px; height:150px; border:1px solid #9c9c9c; float:left;}
+.logoTip1-messageBody dd textarea{ width:363px; height:145px; border:none; resize:none; padding:5px 0 0 5px;}
+.logoTip1-sendButton{ width:429px; height:35px; padding:0 0 0 82px; margin:15px 0 0 0;}
+.logoTip1-sendButton span{ width:270px; float:left; height:35px; text-align:right; line-height:45px;}
+.logoTip1-sendButton span em{ font-style:normal; color:#229ca0;}
+
+
+.logoTips-addressee{ width:484px; padding:30px 0 0 27px;}
+.logoTips-messageBody{ width:484px; height:152px; padding:0 0 0 27px; margin:22px 0 0 0;}
+.logoTips-messageBody dt{ width:56px; float:left; line-height:10px;}
+.logoTips-messageBody dd{ width:368px; height:150px; border:1px solid #9c9c9c; float:left;}
+.logoTips-messageBody dd textarea{ width:363px; height:145px; border:none; resize:none; padding:5px 0 0 5px;}
+.logoTips-sendButton{ width:429px; height:35px; padding:0 0 0 82px; margin:15px 0 0 0;}
+.logoTips-sendButton span{ width:270px; float:left; height:35px; text-align:right; line-height:45px;}
+.logoTips-sendButton span em{ font-style:normal; color:#229ca0;}
+
+.logoTipss-addressee{ width:484px; padding:30px 0 0 27px;}
+.logoTipss-messageBody{ width:484px; height:152px; padding:0 0 0 27px; margin:22px 0 0 0;}
+.logoTipss-messageBody dt{ width:56px; float:left; line-height:10px;}
+.logoTipss-messageBody dd{ width:368px; height:150px; border:1px solid #9c9c9c; float:left;}
+.logoTipss-messageBody dd textarea{ width:363px; height:145px; border:none; resize:none; padding:5px 0 0 5px;}
+.logoTipss-sendButton{ width:429px; height:35px; padding:0 0 0 82px; margin:15px 0 0 0;}
+.logoTipss-sendButton span{ width:270px; float:left; height:35px; text-align:right; line-height:45px;}
+.logoTipss-sendButton span em{ font-style:normal; color:#229ca0;}
+
+
+.logoTip-alert{ width:348px;}
+.logoTip-top-text-alert{ width:277px;}
+.logoTip-alert-content{ width:308px; padding:20px 20px; font-size:14px; text-indent:25px;}
+.logoTip-makeSure{ width:348px; height:35px;}
+.logoTip-makeSure a{ float:right; margin-right:20px;}

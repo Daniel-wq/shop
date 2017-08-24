@@ -1,0 +1,62 @@
+{extend name='base'/}
+{block name='content'}
+<!-- TAB NAVIGATION -->
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#tab1">商品</a></li>
+    <li><a href="/admin/goods/create" >添加商品</a></li>
+</ul>
+<div class="panel panel-default">
+	  <div class="panel-heading">
+			<h3 class="panel-title">栏目管理</h3>
+	  </div>
+	  <div class="panel-body">
+			<table class="table table-hover">
+				<thead>
+				<tr>
+					<th width="5%">编号</th>
+					<th>商品名称</th>
+					<th>价格</th>
+					<th>列表图</th>
+					<th>所属栏目</th>
+					<th width="20%">操作</th>
+				</tr>
+				</thead>
+				<tbody>
+				<?php foreach ( $field as $v ): ?>
+				<tr>
+					<td>{$v['id']}</td>
+					<td>{$v['gname']}</td>
+					<td>
+						<p>{$v['price']}</p>
+					</td>
+					<td>
+						<img src="{$v['thumb']}" width="50" alt="">
+					</td>
+					<td>{$v['name']}</td>
+					<td>
+						<a href="/admin/goods/{$v['id']}/edit" class="btn btn-primary">编辑</a>
+						<a href="javascript:;" onclick="del({$v['id']})" class="btn btn-danger">删除</a>
+					</td>
+				</tr>
+				<?php endforeach; ?>
+				</tbody>
+			</table>
+	  </div>
+</div>
+<script>
+    function del(id) {
+        require(['util'], function (util) {
+            util.confirm('确定删除吗?',function(){
+                $.ajax({
+                    url:'/admin/goods/' + id,
+                    method:'DELETE',
+                    success:function(response){
+                        util.message(response.msg,'refresh');
+                    }
+                })
+            })
+        })
+    }
+</script>
+
+{/block}

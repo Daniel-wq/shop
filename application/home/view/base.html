@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>千钧抵不过你一发</title>
+    <meta name="description" content="365天不打烊的创意市集，汇集全球优质设计师产品、纯手工手作产品的购物网站，创意礼物首选网站，中国领先的设计师手工diy产品网购平台，小清新电商
+"/>
+
+    <link href="__STATIC__/home/index/css/wowsai.css" rel="stylesheet" type="text/css"/>
+    <link href="__STATIC__/home/index/css/common_new.css" rel="stylesheet" type="text/css"/>
+    <link href="__STATIC__/home/index/css/wowsai_new.css" rel="stylesheet" type="text/css"/>
+    <link href="__STATIC__/home/index/css/letter.css" rel="stylesheet" type="text/css"/>
+    <link href="__STATIC__/home/index/css/logotip.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="__STATIC__/home/index/css/ui.totop.css"/>
+
+    <script type="text/javascript" src="__STATIC__/home/index/js/index.js"></script>
+    <script type="text/javascript" src="__STATIC__/home/index/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/home/index/js/ecmall.js" charset="utf-8"></script>
+    <script type="text/javascript" src="__STATIC__/home/index/js/nav.js" charset="utf-8"></script>
+    <!--<script type="text/javascript" src="js/select.js" charset="utf-8"></script>-->
+    <script type="text/javascript" src="__STATIC__/home/index/js/member.js" charset="utf-8"></script>
+    <script type="text/javascript" src="__STATIC__/home/index/js/jquery.cookie.js" charset="utf-8"></script>
+    <link href="__STATIC__/home/index/css/gerenzhanghu.css" rel="stylesheet" type="text/css"/>
+
+    <link href="__STATIC__/home/index/css/alertify.core.css" rel="stylesheet" type="text/css"/>
+    <link href="__STATIC__/home/index/css/alertify.default.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="__STATIC__/home/index/js/alertify.js"></script>
+
+
+    <!--<script type="text/javascript" src="__STATIC__/home/index/js/message.js" charset="utf-8"></script>-->
+    <!-- <script type="text/javascript" src="js/ad_ui.js" charset="utf-8"></script> -->
+
+    <style type="text/css">
+        .ws_header_bottom {
+            margin-bottom: 0px;
+        }
+    </style>
+    <!--<editmode></editmode>-->
+</head>
+
+<body>
+<script src="__STATIC__/home/index/js/easing.js" type="text/javascript"></script>
+
+<script src="__STATIC__/home/index/js/jquery.ui.totop.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $().UItoTop({easingType: 'easeOutQuart'});
+
+    });
+</script>
+<!--<div id="ewm_pic" style="display:none;"><img src="__STATIC__/home/index/picture/erweima.png"/></div>-->
+<!--<div id="erweima" style="cursor:pointer;display: block" title="哇噻网二维码"></div>-->
+<div id="toTop" style="cursor: pointer;display: block" title="回顶部">
+    <span id="toTopHover" style="opacity:0;"></span>
+</div>
+<div id="over"></div>
+<div id="header_new">
+    <div class="header_body">
+        <div class="header_top fixed" style="position:relative;">
+            <div id="logins">
+                <!--个人中心开始-->
+               <?php if(\think\Session::get('user_name')): ?>
+                <div class="header_acatar fl fixed" onmouseover="avatar_mouseover()" onmouseout="avatar_mouseout()" style="margin: 7px 0 0 0;">
+                    <a href="" class="avatar_new">
+                        <img src="__STATIC__/home/index/images/touxiang.jpg" width="30" height="30">
+                    </a>
+                    <div class="username">
+                        <div class="n_username">
+                            <?php echo \think\Session::get('user_name') ?>
+                        </div>
+                    </div>
+                    <div class="userinfo_tip" style="display: none;width: 198px">
+                        <div class="cloumn">
+                            <div class="cloumnLogo cloumnLogo1"></div>
+                            <ul>
+                                <li>
+                                    <a href="#">我的主页</a>
+                                </li>
+                                <li>
+                                    <a href="/home/User/orderlists">我的订单</a>
+                                </li>
+                                <li>
+                                    <a href="/logout.html">退出</a>
+                                </li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <!--<div class="cloumn">-->
+                            <!--<div class="cloumnLogo cloumnLogo2"></div>-->
+                            <!--<ul>-->
+                                <!--<li>-->
+                                    <!--<a href="#">-->
+                                        <!--"待付款"-->
+                                        <!--<span style="width: 50px;display: inline-block;"></span>"0"-->
+
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="#">-->
+                                        <!--"待发货"-->
+                                        <!--<span style="width: 50px;display: inline-block;"></span>"0"-->
+
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="#">-->
+                                        <!--"待收货"-->
+                                        <!--<span style="width: 50px;display: inline-block;"></span>-->
+                                        <!--"0"-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="#">-->
+                                        <!--"待评价"-->
+                                        <!--<span style="width: 50px;display: inline-block;"></span>-->
+                                        <!--"0"-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+                <?php else: ?>
+                <div class="headerLogin fl">
+                    <a href="/login.html">登录</a>
+                    <a href="/register.html">注册</a>
+                </div>
+                <?php endif; ?>
+                <!--个人中心结束-->
+                <div class="header_buycar fr size14">
+                    <a href="/cart" target="_blank">
+                        "购物车"
+                        <!--<span class="ju">0</span>-->
+                        <!--"件"-->
+                    </a>
+                </div>
+            </div>
+
+            <h1 id="logo"><a href="">哇噻网</a></h1>
+        </div>
+
+        <div class="header_bottom">
+
+            <ul class="site_nav siteNav fl" style="display:block;">
+
+                <li class="siteNavL"><a href="/">首页</a></li>
+                <?php foreach ( $categoryData as $v ): ?>
+                <li><a href="/lists/{$v['id']}.html" target="_blank">{$v['name']}</a></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+</div>
+{block name="content"}{/block}
+
+<link rel="stylesheet" type="text/css" href="__STATIC__/home/index/css/style.css"/>
+
+
+<script type="text/javascript">
+    var et, len;
+    var index = 0;
+    $(function () {
+        //给首页加背景色
+        $('body').css({background: '#f6f6f6'});
+        //轮播
+        len = $('#wowslider-container1 li').length;
+        $('#page a:eq(0)').addClass('ws_selbull');
+        et = setInterval('rollindex(0)', 3000);
+        divceter();
+        $(window).resize(function () {
+            divceter();
+        });
+        $('#wowslider-container1').bind({
+            mouseover: function () {
+                clearInterval(et);
+            },
+            mouseleave: function () {
+                et = setInterval('rollindex(0)', 4000);
+            }
+        });
+        $('#next').click(function () {
+            rollindex(0);
+        });
+        $('#prev').click(function () {
+            if (index == 0) {
+                i = len;
+            } else {
+                i = index;
+            }
+            rollindex(i);
+        });
+        $('#page a').click(function (e) {
+            var tx = $(e.target).text();
+            rollindex(tx);
+        });
+    });
+    function divceter() {
+        var w = $(window).width();
+        var left = -(1920 - Number(w)) / 2;
+        $('#wowslider-container1').attr('style', 'width:' + w + 'px;');
+        $('#wowslider-container1 ul').css({marginLeft: left + "px"});
+    }
+    function rollindex(i) {
+        //$('#wowslider-container1 li:eq('+index+')').fadeOut('fast');
+        if (i > 0) {
+            var n = Number(i) - 1;
+        } else {
+            var n = Number(index) + 1;
+        }
+        if (n == len) {
+            $('#page a:eq(0)').addClass('ws_selbull');
+            $('#page a:eq(0)').siblings().removeClass('ws_selbull');
+            $('#wowslider-container1 li:eq(0)').fadeIn('slow', function () {
+                index = 0;
+            }).siblings().hide();
+        } else {
+            $('#page a:eq(' + n + ')').addClass('ws_selbull');
+            $('#page a:eq(' + n + ')').siblings().removeClass('ws_selbull');
+            $('#wowslider-container1 li:eq(' + n + ')').fadeIn('slow', function () {
+                index = n;
+            }).siblings().hide();
+
+        }
+
+
+    }
+    //倒计时
+    var timer = new Array();
+    $(function () {
+        $('#ctime span').each(function (idx) {
+            var obj = $(this);
+            showTime(obj, idx)
+        });
+    });
+    function showTime(obj, idx) {
+        if (timer == null) {
+            var timer = new Array();
+        }
+        timer[idx] = setInterval(function () {
+            var d = new Date();
+            var thist = d.getTime();
+            var time = Math.round(thist / 1000)
+            var stime = obj.attr('stime');
+            var etime = obj.attr('etime');
+            if (time > stime && time < etime) {
+                var dtime = Number(etime) - Number(time);
+                day = Math.floor(dtime / 3600 / 24);
+                hour = Math.floor((dtime / 3600) % 24);
+                minutes = Math.floor((dtime / 60) % 60);
+                seconds = Math.floor(dtime % 60);
+                msg = "  " + day + "天" + hour + "小时" + minutes + "分" + seconds + "秒";
+                obj.html(msg);
+            } else if (time < stime) {
+                clearInterval(timer[idx]);
+                obj.html('尚未开始！');
+            } else if (time > etime) {
+                clearInterval(timer[idx]);
+                obj.html('已经结束！');
+            }
+        }, 1000);
+    }
+</script>
+<div class="footer_new">
+    <div class="footerTop">
+        <div class="footerTopCon fixed">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <script type="text/javascript" src="__STATIC__/home/index/js/new_wowsai.js" charset="utf-8"></script>
+            <script type="text/javascript" src="__STATIC__/home/index/js/popup.js"></script>
+
+
+            <div class="moreJingCai fl">
+                <p class="fTit">更多精彩</p>
+                <ul>
+                    <li><a target="_blank" href="shopping/groupidea">闪购</a></li>
+                    <li><a target="_blank" href="shopping/xinpin">新品</a></li>
+                    <li><a target="_blank" href="shopping/ranking">热卖</a></li>
+                    <li><a target="_blank" href="shopping/gift">礼物</a></li>
+                    <li><a target="_blank" href="window">橱窗</a></li>
+                    <li><a target="_blank" href="/index.php?app=brand&act=brandindex">品牌</a></li>
+                </ul>
+            </div>
+
+            <div class="weChengNuo fl">
+                <p class="fTit">我们承诺</p>
+                <ul>
+                    <li>100％原创设计</li>
+                    <li>365天不打烊</li>
+                    <li>无理由退换货 ( 除定制 )</li>
+                    <li>担保交易</li>
+                    <li>先行赔付</li>
+                    <li>支持定制</li>
+                </ul>
+            </div>
+            <div class="gzwm fl">
+                <p class="fTit">在这里关注我们</p>
+                <ul>
+                    <li><a target="_blank" class="sina" href="http://e.weibo.com/wowsai">新浪微博</a></li>
+                    <li><a target="_blank" class="qq" href="http://e.t.qq.com/hi_wowsai">腾讯微博</a></li>
+                    <li><a target="_blank" class="douban" href="http://site.douban.com/121656/">豆瓣小站</a></li>
+                    <li><a target="_blank" class="renren" href="http://www.renren.com/600867437">人人小站</a></li>
+                    <li class="ewm">
+                        <a class="weixin" href="javascript:void(0)">哇噻网官方微信</a>
+                        <img src="__STATIC__/home/index/picture/ewm.png"/>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tdCode fl">
+                <div>
+                    <h2>扫码关注我</h2>
+                    <img border="0" usemap="#Map" src="__STATIC__/home/index/picture/gongzhong.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerBottom">
+    <div class="footerBottomCon">
+    <p class="gaoduanTit">高端定制上哇噻网</p>
+    <div class="footerNav">
+    <a target="_blank" href="">关于我们</a>
+    <a target="_blank" href="">联系我们</a>
+    <a target="_blank" href="">媒体报道</a>
+    <a target="_blank" href="">创意画报</a>
+    <a target="_blank" href="">招贤纳士</a>
+    <a target="_blank" href="">版权保护</a>
+    <a target="_blank" href="">用户条款</a>
+    <a target="_blank" href="">隐私声明</a>
+    <a target="_blank" href="">友情链接</a>
+    <a target="_blank" href="">网站地图</a>
+    <a target="_blank" href="">帮助中心</a>
+    <a target="_blank" href="">手工客</a>
+    </div>
+    <p class="beian">北京光年创艺信息技术有限公司&nbsp;WowSai.com Copyright&copy; 2008-2013&nbsp;[京ICP备10020900][京公网安备11010502026420][京ICP证090011号]</p>
+    <div class="renzhengPic" style='display:none;'>
+    <a href='https://search.szfw.org/cert/l/CX20121203002033002108' target='_blank'><img src='__STATIC__/home/index/picture/108_40_cart.png' style="display:inline-block" alt="诚信网站"></a>
+    <a href='' target='_blank'><img src='__STATIC__/home/index/picture/ws_safe_icon.png' style="display:inline-block" alt=""></a>
+    <script src="__STATIC__/home/index/js/seallogo.js"></script>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript">
+    //头部显示双12活动的广告图
+    var WS_URL = "http://www.wowsai.com/";
+    var WS_URL2 = "http://www.wowsai.com/index.php";
+    if (document.URL == WS_URL || document.URL == WS_URL2) {
+        $(document).ready(function () {
+            $(".top_advance_small").hide();
+            $(".top_advance").slideDown(3000, function () {
+                setInterval(hide_double12, 5000);
+            });
+        })
+        function hide_double12() {
+            $(".top_advance").slideUp(2000, function () {
+                $(".top_advance_small").show();
+            });
+
+        }
+    }
+
+    function wowsai_search() {
+        $('#wowsai_sear').submit();
+    }
+    /***商品全部分类的滑动效果*****/
+    $(".ws_nav_all_cate li").hover(function () {
+        $(this).children('ul').stop(true, true).show();
+    }, function () {
+        $(this).children('ul').stop(true, true).hide();
+        $(".li_flag").removeClass("cate_a");
+    })
+    $(".li_flag").hover(function () {
+        $(".li_flag").removeClass("cate_a");
+        $(this).addClass('cate_a');
+    })
+    $(document).ready(function () {
+        var num = $(".ws_cate_con").length;
+        for (var i = 0; i < num; i++) {
+            if (i == 6 || i == 9) {
+                $(".ws_cate_con").eq(i).css({"top": -(37 + 1 * 36) + "px"});
+            } else {
+                if (i <= 6) {
+                    $(".ws_cate_con").eq(i).css({"top": -(37 + i * 36) + "px"});
+                } else {
+                    $(".ws_cate_con").eq(i).css({"top": -(37 + (i - 1) * 36) + "px"});
+                }
+            }
+        }
+    })
+    var app = $('#appname').val();
+    var act = $('#actname').val();
+    var txt = 'url' + app + act;
+    var url = window.location.href;
+    if (txt.indexOf('groupidea') > 0) {
+        $("#nav5").addClass("ws_nav_li_checked");
+    }
+    if (txt.indexOf('custom') > 0) {
+        $("#nav6").addClass("ws_nav_li_checked");
+    }
+    if (txt.indexOf("window") > 0) {
+        $("#nav7").addClass("ws_nav_li_checked");
+    }
+    if (txt.indexOf('stroll') > 0) {
+        $("#nav8").addClass("ws_nav_li_checked");
+    }
+    if (txt.indexOf('zixun') > 0) {
+        $("#nav9").addClass("ws_nav_li_checked");
+    }
+    $("#site_nav_diy").hover(function () {
+        $(this).find(".cateTip").stop(true, true).show();
+    }, function () {
+        $(this).find(".cateTip").stop(true, true).hide();
+    })
+
+
+    function setsite() {
+        var l = ($(window).width() - $('#loginDiv').width()) / 2;
+        $('#loginDiv').css({left: l + 'px'});
+        $('#over').css({width: $(document).width() + "px", height: $(document).height() + "px"});
+        $('#over').show();
+    }
+</script>
+
+<script type="text/javascript" src="__STATIC__/home/index/js/snowstorm.js"></script>
+<script>
+    (function () {
+        var startDate = new Date("2014/12/24 16:00:00");
+        var endDate = new Date("2014/12/25 23:59:59");
+        var nowDate = new Date();
+        if (nowDate >= startDate && nowDate <= endDate) {
+            snowStorm.start();
+        }
+    })();
+
+    function avatar_mouseover(){
+        $(".userinfo_tip").show();
+    }
+    function avatar_mouseout(){
+        $(".userinfo_tip").hide();
+    }
+</script>
+
+
+<script type="text/javascript" src="__STATIC__/home/index/js/conversion.js">
+</script>
+
+<script src="__STATIC__/home/index/js/wow.js" language="JavaScript"></script>
+<script src="__STATIC__/home/index/js/stat.js" language="JavaScript"></script>
+</html>

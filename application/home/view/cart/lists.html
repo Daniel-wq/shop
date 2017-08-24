@@ -1,0 +1,858 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>千钧抵不过你一发</title>
+    <meta name="description" content="365天不打烊的创意市集，汇集全球优质设计师产品、纯手工手作产品的购物网站，创意礼物首选网站，中国领先的设计师手工diy产品网购平台，小清新电商
+"/>
+<link rel="stylesheet" type="text/css" href="__STATIC__/home/cart/css/flow.css">
+<link rel="icon" href="__STATIC__/home/cart/animated_favicon.gif" type="image/gif" />
+<link href="__STATIC__/home/cart/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="__STATIC__/home/cart/css/core.css" type="text/css"/>
+<link rel="stylesheet" href="__STATIC__/home/cart/css/head.css" type="text/css"/>
+<link rel="stylesheet" href="__STATIC__/home/cart/css/foot.css" type="text/css"/>
+<link rel="stylesheet" href="__STATIC__/home/cart/css/new-index.css" type="text/css"/>
+<link rel="stylesheet" href="__STATIC__/home/cart/css/topnew.css" type="text/css"/>
+<script type="text/javascript" src="__STATIC__/home/cart/js/utils.js"></script>
+<script type="text/javascript" src="__STATIC__/home/cart/js/common.js"></script>
+<script type="text/javascript" src="__STATIC__/home/cart/js/shopping_flow.js"></script>
+<script type="text/javascript" src="__STATIC__/home/cart/js/transport.js"></script>
+
+
+<link href="__STATIC__/home/index/css/wowsai.css" rel="stylesheet" type="text/css"/>
+<link href="__STATIC__/home/index/css/common_new.css" rel="stylesheet" type="text/css"/>
+<link href="__STATIC__/home/index/css/wowsai_new.css" rel="stylesheet" type="text/css"/>
+<link href="__STATIC__/home/index/css/letter.css" rel="stylesheet" type="text/css"/>
+<link href="__STATIC__/home/index/css/logotip.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" media="screen,projection" href="__STATIC__/home/index/css/ui.totop.css"/>
+
+<script type="text/javascript" src="__STATIC__/home/index/js/index.js"></script>
+<script type="text/javascript" src="__STATIC__/home/index/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="__STATIC__/home/index/js/ecmall.js" charset="utf-8"></script>
+<script type="text/javascript" src="__STATIC__/home/index/js/nav.js" charset="utf-8"></script>
+<!--<script type="text/javascript" src="js/select.js" charset="utf-8"></script>-->
+<script type="text/javascript" src="__STATIC__/home/index/js/member.js" charset="utf-8"></script>
+<script type="text/javascript" src="__STATIC__/home/index/js/jquery.cookie.js" charset="utf-8"></script>
+<link href="__STATIC__/home/index/css/gerenzhanghu.css" rel="stylesheet" type="text/css"/>
+
+<link href="__STATIC__/home/index/css/alertify.core.css" rel="stylesheet" type="text/css"/>
+<link href="__STATIC__/home/index/css/alertify.default.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="__STATIC__/home/index/js/alertify.js"></script>
+<script type="text/javascript" src="__STATIC__/node_modules/vue/dist/vue.js"></script>
+
+
+<!--<script type="text/javascript" src="__STATIC__/home/index/js/message.js" charset="utf-8"></script>-->
+<!-- <script type="text/javascript" src="js/ad_ui.js" charset="utf-8"></script> -->
+
+<style type="text/css">
+    .ws_header_bottom {
+        margin-bottom: 0px;
+    }
+</style>
+
+</head>
+<body>
+
+<script type="text/javascript" src="__STATIC__/home/cart/js/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__STATIC__/home/cart/js/jquery.scrollloading-min.js"></script><div id="head" style="z-index:2">
+<!--头部-->
+    <div id="header_new">
+        <div class="header_body">
+            <div class="header_top fixed" style="position:relative;">
+                <div id="logins">
+                    <!--个人中心开始-->
+                    <?php if(\think\Session::get('user_name')): ?>
+                    <div class="header_acatar fl fixed" onmouseover="avatar_mouseover()" onmouseout="avatar_mouseout()" style="margin: 7px 0 0 0;">
+                        <a href="" class="avatar_new">
+                            <img src="__STATIC__/home/index/images/touxiang.jpg" width="30" height="30">
+                        </a>
+                        <div class="username">
+                            <div class="n_username">
+                                <?php echo \think\Session::get('user_name') ?>
+                            </div>
+                        </div>
+                        <div class="userinfo_tip" style="display: none;width: 198px">
+                            <div class="cloumn">
+                                <div class="cloumnLogo cloumnLogo1"></div>
+                                <ul>
+                                    <li>
+                                        <a href="">我的主页</a>
+                                    </li>
+                                    <li>
+                                        <a href="/logout.html">退出</a>
+                                    </li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <!--<div class="cloumn">-->
+                                <!--<div class="cloumnLogo cloumnLogo2"></div>-->
+                                <!--<ul>-->
+                                    <!--<li>-->
+                                        <!--<a href="">-->
+                                            <!--"待付款"-->
+                                            <!--<span style="width: 50px;display: inline-block;"></span>"0"-->
+
+                                        <!--</a>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                        <!--<a href="">-->
+                                            <!--"待发货"-->
+                                            <!--<span style="width: 50px;display: inline-block;"></span>"0"-->
+
+                                        <!--</a>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                        <!--<a href="">-->
+                                            <!--"待收货"-->
+                                            <!--<span style="width: 50px;display: inline-block;"></span>-->
+                                            <!--"0"-->
+                                        <!--</a>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                        <!--<a href="">-->
+                                            <!--"待评价"-->
+                                            <!--<span style="width: 50px;display: inline-block;"></span>-->
+                                            <!--"0"-->
+                                        <!--</a>-->
+                                    <!--</li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                    <?php else: ?>
+                    <div class="headerLogin fl">
+                        <a href="/login.html">登录</a>
+                        <a href="/register.html">注册</a>
+                    </div>
+                    <?php endif; ?>
+                    <!--个人中心结束-->
+                    <div class="header_buycar fr size14">
+                        <a href="/cart" target="_blank">
+                            "购物车"
+                            <span class="ju">0</span>
+                            "件"
+                        </a>
+                    </div>
+                </div>
+
+                <h1 id="logo"><a href="">哇噻网</a></h1>
+            </div>
+
+            <div class="header_bottom">
+
+                <ul class="site_nav siteNav fl" style="display:block;">
+
+                    <li class="siteNavL"><a href="/">首页</a></li>
+                    <?php foreach ( $categoryData as $v ): ?>
+                    <li><a href="/lists/{$v['id']}.html" target="_blank">{$v['name']}</a></li>
+                    <?php endforeach; ?>
+                    <!--<li><a href="shopping/xinpin">新品</a></li>-->
+                    <!--<li><a href="shopping/ranking">热卖</a></li>-->
+                    <!--<li><a href="shopping/groupidea">闪购</a></li>-->
+                    <!--<li id="site_nav_diy" class="last">-->
+                    <!--<a href="diy">定制</a>-->
+                    <!--<div class="content" area="diy_list" widget_type="area"> -->
+                    <!---->
+                    <!--<div id="_widget_737" name="diy_list" widget_type="widget" class="widget">-->
+                    <!--<div class="cateTip">-->
+                    <!--<div class="cateTipTop fixed">-->
+                    <!--<a href="/diy" class="a1"><p class="english" style="color:#f3142b;">CUSTOM</p><p>定制首页</p></a>-->
+                    <!--<a href="/diy" class="a2"><p class="english" style="color:#78dd00;">NEW</p><p>最新</p></a>-->
+                    <!--<a href="/diy" class="a3"><p class="english" style="color:#ff6c00;">HOT</p><p>最热</p></a>-->
+                    <!--<a href="/diy" class="a4"><p class="english" style="color:#ff48b4;">LOVE</p><p>喜欢最多</p></a>-->
+                    <!--</div>-->
+                    <!--<div class="cateTipItem center">-->
+                    <!--<a href="/diy/g1.html" target="_blank">服装服饰</a>-->
+                    <!--<a href="/diy/g8.html" target="_blank">饰品饰物</a>-->
+                    <!--<a href="/diy/g17.html" target="_blank">鞋帽包袋</a>-->
+                    <!--<a href="/diy/g25.html" target="_blank">家居日用</a>-->
+                    <!--<a href="/diy/g36.html" target="_blank">食品/植物/其它</a>-->
+                    <!--<a href="/diy/g32.html" target="_blank">数码周边</a>-->
+                    <!--<a href="/diy/g33.html" target="_blank">办公文具</a>-->
+                    <!--<a href="/diy/g34.html" target="_blank">卡片/玩具玩偶</a>-->
+                    <!--</div>-->
+                    <!--<div class="cateTipTag">-->
+                    <!--<dl class="fixed colorTag">-->
+                    <!--<dt>颜色筛选：</dt>-->
+                    <!--<dd><a href="/diy/d9.html" style="background:#ff0087;" ></a></dd>-->
+                    <!--<dd><a href="/diy/d2.html" style="background:#ff0000;" ></a></dd>-->
+                    <!--<dd><a href="/diy/d5.html" style="background:#ff8100;" ></a></dd>-->
+                    <!--<dd><a href="/diy/d8.html" style="background:#f4cd00;" ></a></dd>-->
+                    <!--<dd><a href="/diy/d11.html" style="background:#fffe09;" ></a></dd>-->
+                    <!--<dd><a href="/diy/d14.html" style="background:#00e405;" ></a></dd>-->
+                    <!--<dd><a href="/diy/d4.html" style="background:#714b25;" ></a></dd>-->
+                    <!--<dd><a href="/diy/d12.html" style="background:#a40cf5;" ></a></dd>-->
+                    <!--<dd><a href="/diy/d6.html" style="background:#0200fb;" ></a></dd>-->
+                    <!--<dd><a href="/diy/d3.html" style="background:#04d4f5;" ></a></dd>-->
+                    <!--<dd><a href="/diy/d10.html" style="background:#ffffff;border:1px solid #cecece; border-radius:10px;" ></a></dd>-->
+                    <!--<dd><a href="/diy/d13.html" style="background:#818181;" ></a></dd>-->
+                    <!--<dd><a href="/diy/d7.html" style="background:#000000;" ></a></dd>-->
+                    <!--</dl>-->
+                    <!--<dl class="fixed">-->
+                    <!--<dt>定制材料：</dt>-->
+                    <!--<dd><a href="/diy/d26.html">棉</a></dd>-->
+                    <!--<dd><a href="/diy/d37.html">金</a></dd>-->
+                    <!--<dd><a href="/diy/d27.html">亚麻</a></dd>-->
+                    <!--<dd><a href="/diy/d38.html">银</a></dd>-->
+                    <!--<dd><a href="/diy/d23.html">塑料</a></dd>-->
+                    <!--<dd><a href="/diy/d28.html">毛料</a></dd>-->
+                    <!--<dd><a href="/diy/d39.html">铜</a></dd>-->
+                    <!--<dd><a href="/diy/d24.html">纸</a></dd>-->
+                    <!--<dd><a href="/diy/d29.html">雪纺</a></dd>-->
+                    <!--<dd><a href="/diy/d40.html">合金</a></dd>-->
+                    <!--<dd><a href="/diy/d25.html">复合材料</a></dd>-->
+                    <!--<dd><a href="/diy/d30.html">毛线</a></dd>-->
+                    <!--<dd><a href="/diy/d41.html">木质</a></dd>-->
+                    <!--<dd><a href="/diy/d42.html">真皮</a></dd>-->
+                    <!--<dd><a href="/diy/d31.html">牛仔</a></dd>-->
+                    <!--<dd><a href="/diy/d32.html">绸缎</a></dd>-->
+                    <!--<dd><a href="/diy/d43.html">PU</a></dd>-->
+                    <!--<dd><a href="/diy/d33.html">帆布</a></dd>-->
+                    <!--<dd><a href="/diy/d44.html">真丝</a></dd>-->
+                    <!--<dd><a href="/diy/d34.html">灯芯绒</a></dd>-->
+                    <!--<dd><a href="/diy/d35.html">聚酯纤维</a></dd>-->
+                    <!--<dd><a href="/diy/d101.html">玻璃/水晶</a></dd>-->
+                    <!--<dd><a href="/diy/d36.html">其他</a></dd>-->
+                    <!--<dd><a href="/diy/d102.html">宝石/珍珠</a></dd>-->
+                    <!--</dl>-->
+                    <!--<dl class="fixed">-->
+                    <!--<dt>定制工艺：</dt>-->
+                    <!--<dd><a href="/diy/d45.html">手工</a></dd>-->
+                    <!--<dd><a href="/diy/d46.html">机器</a></dd>-->
+                    <!--</dl>-->
+                    <!--<dl class="fixed">-->
+                    <!--<dt>定制内容：</dt>-->
+                    <!--<dd><a href="/diy/d61.html">量体</a></dd>-->
+                    <!--<dd><a href="/diy/d62.html">来图</a></dd>-->
+                    <!--<dd><a href="/diy/d63.html">其他</a></dd>-->
+                    <!--</dl>-->
+                    <!--<dl class="fixed">-->
+                    <!--<dt>礼物推荐：</dt>-->
+                    <!--<dd><a href="/diy/d68.html">送給他</a></dd>-->
+                    <!--<dd><a href="/diy/d69.html">送給她</a></dd>-->
+                    <!--<dd><a href="/diy/d70.html">送闺密</a></dd>-->
+                    <!--<dd><a href="/diy/d71.html">送兄弟</a></dd>-->
+                    <!--<dd><a href="/diy/d72.html">送长辈</a></dd>-->
+                    <!--<dd><a href="/diy/d73.html">送儿童</a></dd>-->
+                    <!--<dd><a href="/diy/d74.html">送老板</a></dd>-->
+                    <!--<dd><a href="/diy/d75.html">送员工</a></dd>-->
+                    <!--<dd><a href="/diy/d76.html">送客户</a></dd>-->
+                    <!--<dd><a href="/diy/d77.html">送自己</a></dd>-->
+                    <!--<dd><a href="/diy/d78.html">乔迁礼物</a></dd>-->
+                    <!--<dd><a href="/diy/d79.html">生日礼物</a></dd>-->
+                    <!--</dl>-->
+                    <!--<dl class="fixed">-->
+                    <!--<dt>节日推荐：</dt>-->
+                    <!--<dd><a href="/diy/d80.html">春节</a></dd>-->
+                    <!--<dd><a href="/diy/d91.html">七夕</a></dd>-->
+                    <!--<dd><a href="/diy/d81.html">清明</a></dd>-->
+                    <!--<dd><a href="/diy/d82.html">端午</a></dd>-->
+                    <!--<dd><a href="/diy/d83.html">父亲</a></dd>-->
+                    <!--<dd><a href="/diy/d84.html">母亲</a></dd>-->
+                    <!--<dd><a href="/diy/d85.html">儿童</a></dd>-->
+                    <!--<dd><a href="/diy/d86.html">中秋</a></dd>-->
+                    <!--<dd><a href="/diy/d87.html">万圣</a></dd>-->
+                    <!--<dd><a href="/diy/d88.html">重阳</a></dd>-->
+                    <!--<dd><a href="/diy/d90.html">情人</a></dd>-->
+                    <!--<dd><a href="/diy/d89.html">圣诞</a></dd>-->
+                    <!--<dd><a href="/diy/d92.html">愚人</a></dd>-->
+                    <!--</dl>-->
+                    <!--<dl class="fixed">-->
+                    <!--<dt>情景推荐：</dt>-->
+                    <!--<dd><a href="/diy/d99.html">上班</a></dd>-->
+                    <!--<dd><a href="/diy/d93.html">约会</a></dd>-->
+                    <!--<dd><a href="/diy/d94.html">表白</a></dd>-->
+                    <!--<dd><a href="/diy/d95.html">婚礼</a></dd>-->
+                    <!--<dd><a href="/diy/d96.html">年会</a></dd>-->
+                    <!--<dd><a href="/diy/d97.html">装修</a></dd>-->
+                    <!--<dd><a href="/diy/d98.html">旅行</a></dd>-->
+                    <!--<dd><a href="/diy/d100.html">聚会</a></dd>-->
+                    <!--</dl>-->
+                    <!--</div>-->
+                    <!---->
+                    <!--<div class="cateTagMore">-->
+                    <!--<a href="/diy">MORE 更多分类 ></a>-->
+                    <!--</div>-->
+                    <!--<div class="dot"></div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</li>-->
+                </ul>
+
+
+                <!--<div class="search_box_new fr fixed">-->
+                <!--<form method="GET" action="index.php?app=search" id='wowsai_sear'>-->
+                <!--<input type="hidden" name="act" value="index"/>-->
+                <!--<input type="hidden" name="app" value="newsearch"/>-->
+                <!--<input type="text" name="keyword" placeholder="请输入要搜索的关键词" value=""/>-->
+                <!--<a class="search_btn" href="javascript:wowsai_search()"></a>-->
+                <!--</form>-->
+                <!--</div>-->
+                <!--<ul class="site_nav siteNav fr" style="display:block;">-->
+                <!--<li><a href="dynamic">动态</a></li>-->
+                <!--<li><a href="zixun">画报</a></li>-->
+                <!--</ul>-->
+            </div>
+        </div>
+    </div>
+<!--头部结束-->
+
+</div>
+<script type="text/javascript" src="__STATIC__/home/cart/js/json.js"></script>
+<script type="text/javascript" src="__STATIC__/home/cart/js/public.js"></script>
+<link rel="stylesheet" type="text/css" href="__STATIC__/home/cart/css/global.css">
+
+<div id="dialog_login"></div>
+ <div class="block">
+  <div id="app">
+<div class="flow_steps">
+    <ul class="num5">
+        <li class="current"><span class="first">1. 查看购物车</span></li>
+        <li><span>2. 拍下商品</span></li>
+        <li><span>3. 付款到支付宝</span></li>
+        <li><span>4. 确认收货</span></li>
+        <li class="last"><span>5. 评价</span></li>
+    </ul>
+</div>
+     <div id="mcartlist">
+         <table id="trunk_67694825" class="m-trunk m-host-B">
+             <colgroup>
+                 <col class="m-col-chk">
+                 <col class="m-col-title">
+                 <col class="m-col-price">
+                 <col class="m-col-amount">
+                 <col class="m-col-agio">
+                 <col class="m-col-total">
+                 <col class="m-col-operate">
+             </colgroup>
+             <thead>
+             <tr class="m-trunk-head">
+                 <th colspan="2"><div class="m-head-cont">
+                     <div class="m-head-bd">
+                         <div class="m-head-static">
+                             <a title="哥弟官方商城" href="index.php" target="_blank" class="aHover">哥弟官方商城</a>
+                             <span class="noFreight">| 满100元免运费</span>
+                         </div>
+                     </div>
+                 </div></th>
+                 <th>单价(元)</th>
+                 <th>数量</th>
+                 <th>优惠方式</th>
+                 <th>小计(元)</th>
+                 <th>操作</th>
+             </tr>
+             </thead>
+             <tbody>
+             <tr class="m-split">
+                 <td colspan="7" ></td>
+             </tr>
+             </tbody>
+             <tbody class="m-bundle" v-for="(v,k) in cart">
+             <tr class="m-order m-selected">
+                 <td class="m-col-chk"><input name="items" type="checkbox" value="318173" checked="" class="m-chk">&nbsp;</td>
+                 <td class="m-col-title clearfix" >
+                     <div class="m-col-img" id="minGoodsImg">
+                         <a target="_blank" href="goods.php?id=2198" class="minGoodsImg_a">
+                             <img :src="v['info']['pics']" class="m-order-img">                            <s></s>
+                             <img class="col_img_hide" :src="v['pics']" />                        </a>
+                     </div>
+
+                     <div class="m-col-meta">
+                         <p class="m-title-p"><a target="_blank" href="" title="" class="m-title"></a></p>
+                         <!--<p class="goodsAttrCart">颜色:黑色-->
+                         <!--尺码:S-->
+                         <!--</p>-->
+                     </div></td>
+                 <td class="m-col-price"><em class="m-price-now">￥{{v['price']}}</em></td>
+                 <td class="m-col-amount">
+                     <div class="m-amount">
+                         <a class="m-minus m-jobout m-minus-disable" href="javascript:void(0)" @click="reduce(k)"></a>
+                         <input type="text" v-model.number=v['num'] class="m-text">
+                         <a class="m-plus m-jobout" href="javascript:void(0)" @click="add(k,v['options'])" ></a>
+                     </div>
+                     <!--<em class="m-amount-error"></em>-->
+                 </td>
+                 <td class="m-col-agio"><div class="m-promo-list">无</div></td>
+                 <td class="m-col-total"><em class="m-sum">￥{{v['price']*v['num'] || v['price']}}</em></td>
+                 <td class="m-col-operate" rowspan="1">
+                     <!--<p><a  onclick="flowAddCollect(this,2198,318173)" class="m-fav" title="移至收藏夹">收藏</a></p>-->
+                     <p>
+                         <a href="javascript:void(0);" class="m-del" title="删除">删除</a>
+                         <span class="k" style="display: none">{{k}}</span>
+                     </p>
+
+                 </td>
+             </tr>
+
+
+             </tbody>
+         </table>
+
+
+         <div class="alreadyCollect clearfix" >
+             <div class="shadow"></div>
+             <div class="notice" id="collectMessage">
+                 已收藏该宝贝
+             </div>
+         </div>
+
+
+
+     </div>
+     <div style="height20px;width:100%;color:red">温馨提示：购物车不显示折扣信息，订单价格以最后结算价为准。</div>
+     <div style="height: 35px; padding: 5px 0px;">
+         <div class="cashier" id="cashier">
+             <div class="rgt">
+                 <span class="m-fee-box">商品总价(不含运费)：<em class="m-total-fee" id="statGoodsPrice">{{totalPrice}}</em>元</span>
+                 <span class="m-go-box">
+                <button class="m-go" type="button" onclick="check_cart();">结&#12288;算</button>
+            </span>
+             </div>
+             <ins title="返回顶部" class="m-gotop" onclick="$(window).scrollTop(0)"></ins></div>
+     </div>
+  </div>
+
+<!--<div  id="empty">-->
+    <!--<div class="cart_menu">-->
+    <!--<ul>-->
+        <!--<li class="top">我的交易</li>-->
+        <!--<li><a href="flow.php">我的购物车</a></li>-->
+        <!--<li><a class="curs" href="user.php?act=order_list">我已买到的宝贝</a></li>-->
+        <!--<li><a href="user.php?act=bonus">我的红包</a></li>-->
+        <!--<li><a href="user.php?act=collection_list">我的收藏</a></li>-->
+        <!--<li><a href="user.php?act=transform_points">我的积分</a></li>-->
+        <!--<li><a href="user.php?act=goods_comment_list">评价管理</a></li>-->
+        <!--<li class="tk"><a href="user.php?act=order_list&amp;order_status=REFUNDING">退货维权</a></li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--<div class="cart_menu_right">-->
+    <!--<h2>您的购物车还是空的，赶紧行动吧！您可以：</h2>-->
+    <!--<ul>-->
+        <!--<li>马上去-->
+        <!--<a  class="aHover" href="index.php">挑选商品</a>-->
+        <!--</li>-->
+        <!--<li>看看 <a class="aHover"  target="_blank" href="user.php?act=order_list">已买到的商品</a>-->
+        <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
+
+ <script>
+     new Vue({
+         el:'#app',
+         data:{
+             cart:{$data},
+         },
+         computed:{
+             totalPrice(){
+                 let sum=0;
+                 for (v in this.cart){
+                     this.cart[v]['subprice']=this.cart[v].num * this.cart[v]['price'];
+                     sum = sum + this.cart[v]['subprice'];
+                 }
+                 return sum;
+             }
+         },
+         methods:{
+             add(k,max){
+
+                 if (this.cart[k]['num'] >=max){
+                     this.cart[k]['num']  =max;
+                 }else {
+                     this.cart[k]['num']  = this.cart[k]['num'] +1;
+                 }
+
+             },
+             reduce(k){
+
+                 if (this.cart[k]['num'] <=1){
+                     this.cart[k]['num'] = 1;
+                 }else {
+                     this.cart[k]['num'] = this.cart[k]['num']-1;
+                 }
+
+             }
+         }
+     })
+
+ </script>
+
+     <!--删除购物车-->
+     <script type="text/javascript">
+         $('.m-del').click(function () {
+             var sid = $(this).siblings('.k').text();
+             location.href = '/home/cart/delete/sid/'+sid;
+         })
+     </script>
+    <!--删除购物车结束-->
+
+<script type="text/javascript">
+	 	
+    //加入收藏
+    function flowAddCollect(ob,goods_id,rec_id){
+			
+        var res = Ajax.call('flow.php?step=collect', 'id='+goods_id ,null, 'GET', 'JSON', false);
+        var td = $(ob).closest('tr').position();
+	    if(res.error == 0)  var str = 'success';
+       
+	    else  var str = 'notice';
+		
+        $('#collectMessage').removeClass().addClass(str).text(res.message).parent().css({
+            'left':td.left,
+            'top':td.top,
+            'display':'block'
+        }).fadeTo(3000,1,
+        function(){
+            $(this).hide();
+            if(res.error == 0)
+            {	
+                var del = Ajax.call('flow.php?step=drop_goods', 'id='+rec_id ,null, 'POST', 'JSON', false);
+                if(del.error == 0)  $(ob).closest('tr').remove();
+            }
+        });
+			
+    }
+
+    //哥弟推荐
+    $('#recommendNav li').click(function()
+    {
+        $(this).addClass('curNav').siblings('li').removeClass('curNav');
+        var num = $.inArray(this,$('#recommendNav li').get());
+        $('#recommendContent div.recommendCont').eq(num).show().siblings('div.recommendCont').hide();
+    });
+	 	
+    var _status = 0;
+    //商品加减数量
+    function goodsNum(ob,rec_id,is_add,price, num)
+    {
+        var cls = $.trim($(ob).attr('class'));
+        if(_status==1){
+            return;
+        }else{
+            if( cls == 'm-minus m-jobout' ||  cls == 'm-plus m-jobout')
+            {
+                if(is_add)
+                {
+                    var i = 1;  var str = 'm-plus-disable';
+                }else
+                {
+                    var i = -1; var str = 'm-minus-disable';
+                }
+                var goodsNum = $(ob).siblings('input');
+                var num = parseInt(goodsNum.val())+i;   
+                if(i == -1 && num <2)
+                {
+                    $(ob).addClass(str);
+                }else if(num > 1)
+                {
+                    $(ob).parent().children('.m-minus').removeClass('m-minus-disable');
+                }
+                _status = 1; 
+                $.get('cart.php?op=update', {rec_id : rec_id , num : num}, function(data){
+                    _status = 0;
+                    if (data != 1){
+                        alert('更新失败');
+                    }else{
+                         goodsNum.val(num);
+                        var col_total =  $(ob).closest('td').siblings('td.m-col-total').children('em.m-sum');
+                        var statPrice = (parseInt($('#statGoodsPrice').text()) + (i*price)).toFixed(2);
+                        var shopPrice = (parseInt(col_total.text()) + (i*price)).toFixed(2);
+                        $('#statGoodsPrice').text(statPrice);
+                        col_total.text(shopPrice)
+                    }
+                });
+            }
+        }
+    }
+        
+    //鼠标移动到购物车里的小图时显示大图
+    $('#minGoodsImg a.minGoodsImg_a').hover(function()
+    {
+        $(this).children('.col_img_hide,s').show();
+			  
+    },function()
+    {
+        $(this).children('.col_img_hide,s').hide();
+    });
+		  
+    //在输入框直接输入数量执行的方法
+    function chageGoodsNum(ob,price,rec_id)
+    {
+        var num = parseInt($(ob).val());
+        if(isNaN(num) || num == 0)
+        {
+            num = 1;
+            $(ob).val(num);
+        }
+        var res = Ajax.call('flow.php?step=goodsNum', 'rec_id='+rec_id+'&num='+num ,null, 'POST', 'JSON', false);
+        if(res.error == 0)
+        {
+            var col_total =  $(ob).closest('td').siblings('td.m-col-total').children('em.m-sum');
+            var statPrice = (parseInt($('#statGoodsPrice').text()) - parseInt(col_total.text()) + num * price).toFixed(2);
+            $('#statGoodsPrice').text(statPrice);
+            var shop_goods = (num * price).toFixed(2);
+            col_total.text(shop_goods);
+        }else{
+            alert("商品修改失败，请刷新重试");	
+        }
+				
+    }
+			
+    //删除商品
+    function deleteGoods(ob,rec_id)
+    {
+        if(confirm('确认要删除该宝贝吗？'))
+        {
+					
+            var res = Ajax.call('flow.php?step=drop_goods', 'id='+rec_id ,null, 'POST', 'JSON', false);
+            if(res.error == 0)
+            {
+                var td = '<td colspan="7" class="deleteGoods"><p>成功删除宝贝，如有误，可<a onclick="restoreGoods(this,'+rec_id+')" class="aHover">撤销本次删除</a></p></td>';
+                $(ob).closest('tr').siblings('tr.m-undo-msg').remove();
+                $(ob).closest('tr').children('td').hide().parent().removeClass().addClass('m-undo-msg').append(td);
+                var price = $(ob).closest('td').siblings('td.m-col-total').text();
+                var statPrice = (parseInt($('#statGoodsPrice').text()) - parseInt(price)).toFixed(2);
+                $('#statGoodsPrice').text(statPrice);
+            }
+					
+        }
+    }
+			
+    //还原已删除的商品
+    function restoreGoods(ob,rec_id)
+    {
+        var res = Ajax.call('flow.php?step=restore_goods', 'id='+rec_id ,null, 'POST', 'JSON', false);
+        var price = $(ob).closest('td').siblings('td.m-col-total').text();
+        $(ob).closest('tr').removeClass('m-undo-msg').addClass('m-order m-selected').children('td').show().siblings('td.deleteGoods').remove();	
+        var statPrice = (parseInt($('#statGoodsPrice').text()) + parseInt(price)).toFixed(2);
+        $('#statGoodsPrice').text(statPrice);
+    }
+</script>
+  
+  
+
+        
+                
+        
+        
+        
+        
+        
+ 		        
+        
+                
+
+
+
+</div>
+<div class="blank5"></div>
+<link rel="stylesheet" href="__STATIC__/home/cart/css/base.css" type="text/css"/>
+
+
+<script>
+    function avatar_mouseover(){
+        $(".userinfo_tip").show();
+    }
+    function avatar_mouseout(){
+        $(".userinfo_tip").hide();
+    }
+</script>
+ 
+
+<!--[if lte IE 8]>
+<script src="__STATIC__/home/cart/js/iebetter.js"></script>
+<![endif]-->
+<script type="text/javascript" src="__STATIC__/home/cart/js/common.js"></script>
+<!--<script type="text/javascript" src="__STATIC__/home/cart/js/quick_links.js"></script>-->
+<script type="text/javascript" src="__STATIC__/home/cart/js/parabola.js"></script>
+<script type="text/javascript">
+	$(".quick_links_panel li").mouseenter(function(){
+		$(this).children(".mp_tooltip").animate({left:-92,queue:true});
+		$(this).children(".mp_tooltip").css("visibility","visible");
+		$(this).children(".ibar_login_box").css("display","block");
+	});
+	$(".quick_links_panel li").mouseleave(function(){
+		$(this).children(".mp_tooltip").css("visibility","hidden");
+		$(this).children(".mp_tooltip").animate({left:-121,queue:true});
+		$(this).children(".ibar_login_box").css("display","none");
+	});
+	$(".quick_toggle li").mouseover(function(){
+		$(this).children(".mp_qrcode").show();
+	});
+	$(".quick_toggle li").mouseleave(function(){
+		$(this).children(".mp_qrcode").hide();
+	});
+
+// 元素以及其他一些变量
+var eleFlyElement = document.querySelector("#flyItem"), eleShopCart = document.querySelector("#shopCart");
+var numberItem = 0;
+// 抛物线运动
+var myParabola = funParabola(eleFlyElement, eleShopCart, {
+	speed: 400, //抛物线速度
+	curvature: 0.0008, //控制抛物线弧度
+	complete: function() {
+		eleFlyElement.style.visibility = "hidden";
+		eleShopCart.querySelector("span").innerHTML = ++numberItem;
+	}
+});
+// 绑定点击事件
+if (eleFlyElement && eleShopCart) {
+	
+	[].slice.call(document.getElementsByClassName("btnCart")).forEach(function(button) {
+		button.addEventListener("click", function(event) {
+			// 滚动大小
+			var scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+			    scrollTop = document.documentElement.scrollTop || document.body.scrollTop || 0;
+			eleFlyElement.style.left = event.clientX + scrollLeft + "px";
+			eleFlyElement.style.top = event.clientY + scrollTop + "px";
+			eleFlyElement.style.visibility = "visible";
+			
+			// 需要重定位
+			myParabola.position().move();			
+		});
+	});
+}
+
+//新增一个调用小能前判断是否登录的函数
+var _login_status = '';
+function SERVER_NTKF(){
+  if(_login_status){
+    NTKF.im_openInPageChat('kf_9549_1491462167868');
+    return true;
+  }else{
+    pop_login();
+    return false;
+  }
+}
+
+/***********订阅邮箱****************/
+function add_email_list()
+{
+    //先判断是否有登录
+    if(_login_status){
+      var _email = '';
+        //判断邮箱是否为空
+        if(!_email){
+          pop_email_follow(0);
+          return false;
+        }
+      if (check_email(_email))
+      {
+        pop_email_follow(1);
+      }
+    }else{
+        pop_login();
+        return false;
+    }
+}
+function rep_add_email_list(text)
+{
+  alert(text);
+}
+elf_isEmail = function( email )
+{
+  var reg1 = /([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)/;
+
+  return reg1.test( email );
+}
+function check_email(email)
+{
+  // var email = document.getElementById('user_email');
+  if (elf_isEmail(email))
+  {
+    return true;
+  }
+  else
+  {
+    alert('此Email不是合法的地址');
+    // email.focus();
+    return false;
+  }
+}
+/***********订阅邮箱****************/
+</script>
+
+
+
+  
+  <script language="javascript" type="text/javascript">
+  NTKF_PARAM = {
+    siteid:"kf_9549",               //企业ID，为固定值，必填
+    settingid:"kf_9549_1491462167868",  //接待组ID，为固定值，必填
+    uid:"",                    //用户ID，未登录可以为空，但不能给null，uid赋予的值显示到小能客户端上
+    uname:"",        //用户名，未登录可以为空，但不能给null，uname赋予的值显示到小能客户端上
+    isvip:"0",                          //是否为vip用户，0代表非会员，1代表会员，取值显示到小能客户端上
+    userlevel:"0",                    //网站自定义会员级别，0-N，可根据选择判断，取值显示到小能客户端上
+    itemid:"",                      //(必填)商品ID
+    itemparam:"girdear",                //对接平台的参数,girdear代表官网，girdearshop代表微商城,girdearmall代表二折微商城
+    orderid:"",              //订单ID
+    orderprice:"",//订单总价
+    erpparam:"gd"                      //erpparam为erp功能的扩展字段，可选，购买erp功能后用于erp功能集成
+    }
+    var orderid = NTKF_PARAM.orderid;
+    var orderprice = NTKF_PARAM.orderprice;
+    if(orderid && !orderprice){
+        $.ajax({
+            url:'user.php?act=checkorder_ajax',
+            type:'post',
+            data:{'orderid':orderid,'orderprice':orderprice},
+            success:function(data){
+            
+            }
+        })
+    }
+  </script>
+  
+<!--<script type="text/javascript" src="__STATIC__/home/cart/js/ntkfstat.js" charset="utf-8"></script>-->
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f4cdc839305fec87af2364a04a938667";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+<script type="text/javascript">
+var process_request = "正在处理您的请求...";
+var username_empty = "- 用户名不能为空。";
+var username_shorter = "- 用户名长度不能少于 3 个字符。";
+var username_invalid = "- 用户名只能是由字母数字以及下划线组成。";
+var password_empty = "- 登录密码不能为空。";
+var password_shorter = "- 登录密码不能少于 6 个字符。";
+var confirm_password_invalid = "- 两次输入密码不一致";
+var email_empty = "- Email 为空";
+var email_invalid = "- Email 不是合法的地址";
+var agreement = "- 您没有接受协议";
+var msn_invalid = "- msn地址不是一个有效的邮件地址";
+var qq_invalid = "- QQ号码不是一个有效的号码";
+var home_phone_invalid = "- 家庭电话不是一个有效号码";
+var office_phone_invalid = "- 办公电话不是一个有效号码";
+var mobile_phone_invalid = "- 手机号码不是一个有效号码";
+var msg_un_blank = "* 用户名不能为空";
+var msg_un_length = "* 用户名最长不得超过7个汉字";
+var msg_un_format = "* 用户名含有非法字符";
+var msg_un_registered = "* 用户名已经存在,请重新输入";
+var msg_can_rg = "* 可以注册";
+var msg_email_blank = "* 邮件地址不能为空";
+var msg_email_registered = "* 邮箱已存在,请重新输入";
+var msg_email_format = "* 邮件地址不合法";
+var msg_blank = "不能为空";
+var no_select_question = "- 您没有完成密码提示问题的操作";
+var passwd_balnk = "- 密码中不能包含空格";
+var username_exist = "用户名 %s 已经存在";
+var compare_no_goods = "您没有选定任何需要比较的商品或者比较的商品数少于 2 个。";
+var btn_buy = "购买";
+var is_cancel = "取消";
+var select_spe = "请选择商品属性";
+</script>
+</html>

@@ -1,0 +1,95 @@
+﻿{extend name='base'/}
+{block name='content'}
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<div class="focus_banner" id="wowslider-container1">
+    <ul>
+        <li style="background: url('__STATIC__/home/index/images/201602181051055611.jpg') no-repeat scroll  0px transparent;"
+            class="slide_0">
+            <a href="/lists/1.html" target="_blank" title="手工客">
+                &nbsp;</a>
+        </li>
+        <li style="background: url('__STATIC__/home/index/images/201608181025251793.jpg') no-repeat scroll  0px transparent;"
+            class="slide_1">
+            <a href="/lists/1.html" target="_blank" title="锦初原创设计包馆">
+                &nbsp;</a>
+        </li>
+        <li style="background: url('__STATIC__/home/index/images/201605311328476034.jpg') no-repeat scroll  0px transparent;"
+            class="slide_2">
+            <a href="/lists/2.html" target="_blank" title="喝呵呵TEABEFUN">
+                &nbsp;</a>
+        </li>
+        <li style="background: url('__STATIC__/home/index/images/201602251742204611.jpg') no-repeat scroll  0px transparent;"
+            class="slide_3">
+            <a href="/lists/2.html" target="_blank" title="八月的清迈">
+                &nbsp;</a>
+        </li>
+        <li style="background: url('__STATIC__/home/index/images/201604131142555569.jpg') no-repeat scroll  0px transparent;"
+            class="slide_4">
+            <a href="/lists/3.html" target="_blank" title="遇格耳钉全场包邮">
+                &nbsp;</a>
+        </li>
+        <li style="background: url('__STATIC__/home/index/images/201512071417566175.jpg') no-repeat scroll  0px transparent;"
+            class="slide_5">
+            <a href="/lists/3.html" target="_blank" title="生活制皂">
+                &nbsp;</a>
+        </li>
+    </ul>
+
+    <a href="javascript:;" id="prev" class="ws_prev"></a>
+    <a href="javascript:;" id="next" class="ws_next"></a>
+    <div id="page" class="ws_bullets">
+        <div>
+            <a title="" href="javascript:;" title="">1</a>
+            <a title="" href="javascript:;" title="">2</a>
+            <a title="" href="javascript:;" title="">3</a>
+            <a title="" href="javascript:;" title="">4</a>
+            <a title="" href="javascript:;" title="">5</a>
+            <a title="" href="javascript:;" title="">6</a>
+
+        </div>
+    </div>
+</div>
+
+<div id="warp">
+    <div class="container fixed" style="width: 1150px">
+        <h2>新品</h2>
+        <?php foreach ($goodsData as $v): ?>
+        <div class="container_list">
+            <a href="/content/{$v['id']}.html" target="_blank"><img src="{$v['thumb']}" alt="{$v['gname']}" style="width:242px;height:314px;"/>
+                <div class="podLabel shadowed ">
+                    <div class="podTitle">{$v['gname']}</div>
+                </div>
+            </a>
+        </div>
+        <?php endforeach; ?>
+    </div>
+
+    <div class="container fixed" style="width: 1150px">
+        <h2>热卖</h2>
+        <?php foreach ($goodsData1 as $k=>$v): ?>
+        <div <?php if($k==1): ?> class="container_list container_list_big" <?php else: ?> class="container_list" <?php endif; ?> <?php if($k==2): ?> style="margin-right:0;" <?php endif; ?>>
+            <a href="/content/{$v['id']}.html" target="_blank"><img src="{$v['thumb']}" alt="{$v['gname']}" <?php if($k==1): ?> style="width:528px;height:314px;" <?php else: ?> style="width:242px;height:314px;" <?php endif; ?>/>
+                <div <?php if($k==1): ?> class="podLabel shadowed podLabel_big" <?php else: ?> class="podLabel shadowed " <?php endif; ?>>
+                    <div class="podTitle">{$v['gname']}</div>
+                </div>
+            </a>
+        </div>
+        <?php endforeach; ?>
+    </div>
+
+    <div class="container fixed" style="width: 1150px;margin-bottom: 60px">
+        <h2>闪购</h2>
+        <?php foreach ($goodsData2 as $k=>$v): ?>
+        <div <?php if($k==1): ?> class="container_list container_list_big" <?php else: ?> class="container_list" <?php endif; ?> <?php if($k==2): ?> style="margin-right:0;" <?php endif; ?>>
+            <a href="/content/{$v['id']}.html" target="_blank"><img src="{$v['thumb']}" alt="{$v['gname']}" <?php if($k==1): ?> style="width:528px;height:314px;" <?php else: ?> style="width:242px;height:314px;" <?php endif; ?>/>
+                <div <?php if($k==1): ?> class="podLabel shadowed podLabel_big" <?php else: ?> class="podLabel shadowed " <?php endif; ?>>
+                    <div class="podTitle">{$v['gname']}</div>
+                </div>
+            </a>
+        </div>
+        <?php endforeach; ?>
+    </div>
+</div>
+{/block}
